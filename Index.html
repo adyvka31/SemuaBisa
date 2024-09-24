@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SemuaBisa</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="icon" href="Images/logo.png" type="image/png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SemuaBisa</title>
-  <link rel="stylesheet" href="style/style.css">
-  <link rel="icon" href="Images/logo.png" type="image/png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="main.js"></script>
-</head>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2F3087",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
 
-<body class="bg-white">
-
-  <!-- pop up atas start -->
-  <!-- <section class="popup">
+  <body class="bg-white overflow-x-hidden max-w-screen-2xl">
+    <!-- pop up atas start -->
+    <!-- <section class="popup">
         <div id="sticky-banner" tabindex="-1" class="fixed top-0 start-0 z-50 flex justify-between w-full p-4 border-b border-gray-200 bg-gray-50 dark:bg-white">
             <div class="flex items-center mx-auto">
                 <p class="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
@@ -40,11 +53,15 @@
             </div>
         </div>
     </section> -->
-  <!-- pop up atas end -->
+    <!-- pop up atas end -->
 
-  <section class="w-screen h-screen border-2 border-gray-200 border-opacity-60 relative mb-32">
-
-    <!-- NAVBAR --> <!-- NAVBAR --> <!-- NAVBAR --> <!-- NAVBAR -->
+    <section
+      class="max-w-screen-2xl border-2 border-gray-200 border-opacity-60 relative mb-32"
+    >
+      <!-- NAVBAR -->
+      <!-- NAVBAR -->
+      <!-- NAVBAR -->
+      <!-- NAVBAR -->
 
     <nav class="fixed w-full bg-white top-0 start-0 border-b z-50">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -79,20 +96,20 @@
                 aria-current="page">Home</a>
             </li>
             <li>
-              <a href="kuliah.html"
+              <a href="#"
                 class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#2F3087] md:p-0 md:dark:hover:text-[#2F3087] dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700">Kuliah</a>
             </li>
             <li>
-              <a href="bootcamp.html"
+              <a href="#"
                 class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#2F3087] md:p-0 md:dark:hover:text-[#2F3087] dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700">
                 Bootcamp</a>
             </li>
             <li>
-              <a href="jasa.html"
+              <a href="#"
                 class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#2F3087] md:p-0 md:dark:hover:text-[#2F3087] dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700">Jasa</a>
             </li>
             <li>
-              <a href="lowongan-kerja.html"
+              <a href="#"
                 class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#2F3087] md:p-0 md:dark:hover:text-[#2F3087] dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700">Lowongan
                 Kerja</a>
             </li>
@@ -101,160 +118,324 @@
       </div>
     </nav>
 
+
     <!-- HERO --> <!-- HERO --> <!-- HERO --> <!-- HERO -->
 
-    <section class="text-gray-600 body-font">
-      <div class="container mx-auto flex px-5 py-40 items-center justify-center flex-col" data-aos="fade-up">
-        <img class="absolute w-32 right-32 bottom-0" src="Images/ellipes.png" alt="">
-        <img class="absolute w-32 left-20 bottom-80" src="Images/ellipes.png" alt="">
-        <div class="text-center lg:w-2/3 w-full mt-36">
-          <h1 class="title-font sm:text-5xl text-4xl mb- font-bold mb-3 text-gray-900">Kembangkan Skill Di <span
-              class="blue font-bold">SemuaBisa</span><span class="text-orange-400 font-bold">.com</span></h1>
-          <p class="mb-10 text-base leading-relaxed">- Menanam Bakat Pemuda Indonesia -</p>
-          <div class="flex justify-center">
-            <button
-              class="inline-flex text-white bg-[#2F3087] border-0 py-2 px-6 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg">Lebih
-              Lengkap</button>
-            <button
-              class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-[#2F3087] hover:text-white hover:shadow-xl duration-500 rounded text-lg">Tentang</button>
+      <section class="text-gray-600 body-font">
+        <div
+          class="container mx-auto flex px-5 py-40 items-center justify-center flex-col"
+          data-aos="fade-up"
+        >
+          <img
+            class="absolute w-32 right-32 bottom-0"
+            src="Images/ellipes.png"
+            alt=""
+          />
+          <img
+            class="absolute w-32 left-20 bottom-80"
+            src="Images/ellipes.png"
+            alt=""
+          />
+          <div class="text-center lg:w-2/3 w-full mt-36">
+            <h1
+              class="title-font sm:text-5xl text-4xl mb- font-bold mb-3 text-gray-900"
+            >
+              Kembangkan Skill Di <span class="blue font-bold">SemuaBisa</span
+              ><span class="text-orange-400 font-bold">.com</span>
+            </h1>
+            <p class="mb-10 text-base leading-relaxed">
+              - Menanam Bakat Pemuda Indonesia -
+            </p>
+            <div class="flex justify-center">
+              <button
+                class="inline-flex text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg"
+              >
+                Lebih Lengkap
+              </button>
+              <button
+                class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-primary hover:text-white hover:shadow-xl duration-500 rounded text-lg"
+              >
+                Tentang
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="text-gray-600 body-font absolute w-full bottom-[-7rem]">
-      <div class="container py-14 mx-auto bg-white shadow-2xl rounded-lg">
-        <div class="lg:w-3/4 flex flex-col sm:flex-row sm:items-center items-start mx-auto" data-aos="fade-up">
-          <h1 class="flex-grow text-2xl  font-medium title-font text-gray-900">Di <span
-              class="blue font-bold">SemuaBisa</span><span class="text-orange-400 font-bold">.com</span> Berbagai Kursus
-            dan Bootcamp Terbaik 100% GRATIS</h1>
-          <img src="Images/panah.png" alt="" class="w-44 ml-5 h-20 mr-20">
-          <button
-            class="flex-shrink-0 text-white bg-[#2F3087] border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg mt-10 sm:mt-0">
-            Daftar Sekarang!!
-          </button>
+      <section class="text-gray-600 body-font absolute w-full bottom-[-7rem]">
+        <div class="container py-14 mx-auto bg-white shadow-2xl rounded-lg">
+          <div
+            class="lg:w-3/4 flex flex-col sm:flex-row sm:items-center items-start mx-auto"
+            data-aos="fade-up"
+          >
+            <h1 class="flex-grow text-2xl font-medium title-font text-gray-900">
+              Di <span class="blue font-bold">SemuaBisa</span
+              ><span class="text-orange-400 font-bold">.com</span> Berbagai
+              Kursus dan Bootcamp Terbaik 100% GRATIS
+            </h1>
+            <img src="Images/panah.png" alt="" class="w-44 ml-5 h-20 mr-20" />
+            <button
+              class="flex-shrink-0 text-white bg-[#2F3087] border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg mt-10 sm:mt-0"
+            >
+              Daftar Sekarang!!
+            </button>
+          </div>
         </div>
-      </div>
+      </section>
     </section>
-  </section>
 
-    <!-- TENTANG KAMI --> <!-- TENTANG KAMI --> <!-- TENTANG KAMI --> <!-- TENTANG KAMI -->
+    <!-- TENTANG KAMI -->
+    <!-- TENTANG KAMI -->
+    <!-- TENTANG KAMI -->
+    <!-- TENTANG KAMI -->
 
     <section class="text-gray-600 body-font">
-      <div class="container mx-auto py-52 flex px-5 md:flex-row flex-col items-center">
-        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0" data-aos="fade-up-right">
-          <img class="object-cover object-center rounded" alt="hero" src="Images/asset-tentang-kami.png">
+      <div
+        class="container mx-auto py-52 flex px-5 md:flex-row flex-col items-center"
+      >
+        <div
+          class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
+          data-aos="fade-up-right"
+        >
+          <img
+            class="object-cover object-center rounded"
+            alt="hero"
+            src="Images/asset-tentang-kami.png"
+          />
         </div>
         <div
           class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
-          data-aos="fade-up-left">
+          data-aos="fade-up-left"
+        >
           <span
-            class="inline-block py-1 px-2 rounded bg-indigo-50 text-[#2F3087] text-xs font-medium tracking-widest mb-4">Kenapa
-            Harus <span class="blue font-bold">SemuaBisa</span><span class="text-orange-400 font-bold">.com</span></span>
-          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Karena Dengan <span
-              class="blue font-bold">SemuaBisa</span><span class="text-orange-400 font-bold">.com</span> </h1>
-          <p class="mb-8 leading-relaxed">Siapapun Bisa Jadi Ahli Teknologi! Kursus online GRATIS ini akan membantumu
-            memahami dunia teknologi mulai dari dasar hingga tingkat lanjut. Dapatkan pengetahuan dan keterampilan baru
-            yang akan membuka peluang baru dalam kariermu.</p>
+            class="inline-block py-1 px-2 rounded bg-indigo-50 text-primarbg-primary text-xs font-medium tracking-widest mb-4"
+            >Kenapa Harus <span class="blue font-bold">SemuaBisa</span
+            ><span class="text-orange-400 font-bold">.com</span></span
+          >
+          <h1
+            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
+          >
+            Karena Dengan <span class="blue font-bold">SemuaBisa</span
+            ><span class="text-orange-400 font-bold">.com</span>
+          </h1>
+          <p class="mb-8 leading-relaxed">
+            Siapapun Bisa Jadi Ahli Teknologi! Kursus online GRATIS ini akan
+            membantumu memahami dunia teknologi mulai dari dasar hingga tingkat
+            lanjut. Dapatkan pengetahuan dan keterampilan baru yang akan membuka
+            peluang baru dalam kariermu.
+          </p>
           <div class="flex justify-center">
             <button
-              class="flex-shrink-0 text-white bg-[#2F3087] border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg mt-10 sm:mt-0">Pelajari
-              Lebih Lanjut</button>
+              class="flex-shrink-0 text-white bg-primary border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg mt-10 sm:mt-0"
+            >
+              Pelajari Lebih Lanjut
+            </button>
           </div>
         </div>
       </div>
     </section>
-  
-    <!-- KATEGORI --> <!-- KATEGORI --> <!-- KATEGORI --> <!-- KATEGORI -->
-  
+
+    <!-- KATEGORI -->
+    <!-- KATEGORI -->
+    <!-- KATEGORI -->
+    <!-- KATEGORI -->
+
     <section class="text-gray-600 body-font">
-      <div class="container mx-auto flex px-5 pt-10 md:flex-row flex-col items-center">
+      <div
+        class="container mx-auto flex px-5 pt-10 md:flex-row flex-col items-center"
+      >
         <div
-          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center" data-aos="fade-up-right">
-          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Jelajahi Semua Kategori
-            <br class="hidden lg:inline-block"> <span class="blue font-bold">SemuaBisa</span><span
-              class="text-orange-400 font-bold">.com</span>
+          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+          data-aos="fade-up-right"
+        >
+          <h1
+            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
+          >
+            Jelajahi Semua Kategori <br class="hidden lg:inline-block" />
+            <span class="blue font-bold">SemuaBisa</span
+            ><span class="text-orange-400 font-bold">.com</span>
           </h1>
-          <p class="mb-8 w-96 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant
-            cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic.</p>
+          <p class="mb-8 w-96 leading-relaxed">
+            Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
+            plant cold-pressed tacos poke beard tote bag. Heirloom echo park
+            mlkshk tote bag selvage hot chicken authentic.
+          </p>
           <div class="flex justify-center">
             <button
-              class="flex-shrink-0 text-white bg-[#2F3087] border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg mt-10 sm:mt-0">Lihat
-              Lengkapnya</button>
+              class="flex-shrink-0 text-white bg-primary border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg mt-10 sm:mt-0"
+            >
+              Lihat Lengkapnya
+            </button>
           </div>
         </div>
         <div class="container px-5 mx-auto">
           <div class="flex flex-wrap grid-rows-3">
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer" data-aos="fade-up-left">
-              <a class="block relative h-36 rounded overflow-hidden hover:-translate-y-4 duration-500">
-                <img alt="ecommerce" class="object-contain object-center w-full h-full block"
-                  src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg">
+            <div
+              class="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer"
+              data-aos="fade-up-left"
+            >
+              <a
+                class="block relative h-36 rounded overflow-hidden hover:-translate-y-4 duration-500"
+              >
+                <img
+                  alt="ecommerce"
+                  class="object-contain object-center w-full h-full block"
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
+                />
               </a>
               <div class="mt-4">
-                <h2 class="text-gray-900 title-font text-lg text-center font-medium">Front-End</h2>
+                <h2
+                  class="text-gray-900 title-font text-lg text-center font-medium"
+                >
+                  Front-End
+                </h2>
               </div>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer" data-aos="fade-up-left">
-              <a class="block relative h-36 rounded overflow-hidden hover:-translate-y-4 duration-500">
-                <img alt="ecommerce" class="object-contain object-center w-full h-full block"
-                  src="https://seeklogo.com/images/A/azure-sql-logo-3AE930D2AF-seeklogo.com.png">
+            <div
+              class="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer"
+              data-aos="fade-up-left"
+            >
+              <a
+                class="block relative h-36 rounded overflow-hidden hover:-translate-y-4 duration-500"
+              >
+                <img
+                  alt="ecommerce"
+                  class="object-contain object-center w-full h-full block"
+                  src="https://seeklogo.com/images/A/azure-sql-logo-3AE930D2AF-seeklogo.com.png"
+                />
               </a>
               <div class="mt-4">
-                <h2 class="text-gray-900 title-font text-lg text-center font-medium">Back-End</h2>
+                <h2
+                  class="text-gray-900 title-font text-lg text-center font-medium"
+                >
+                  Back-End
+                </h2>
               </div>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer" data-aos="fade-up-left">
-              <a class="block relative h-36 rounded overflow-hidden hover:-translate-y-4 duration-500">
-                <img alt="ecommerce" class="object-contain object-center w-full h-full block"
-                  src="https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1468442513/ntffgniiqfya5tvzbsol.png">
+            <div
+              class="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer"
+              data-aos="fade-up-left"
+            >
+              <a
+                class="block relative h-36 rounded overflow-hidden hover:-translate-y-4 duration-500"
+              >
+                <img
+                  alt="ecommerce"
+                  class="object-contain object-center w-full h-full block"
+                  src="https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1468442513/ntffgniiqfya5tvzbsol.png"
+                />
               </a>
               <div class="mt-4">
-                <h2 class="text-gray-900 title-font text-lg text-center font-medium">Full Stack</h2>
+                <h2
+                  class="text-gray-900 title-font text-lg text-center font-medium"
+                >
+                  Full Stack
+                </h2>
               </div>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer" data-aos="fade-up-left">
-              <a class="block relative h-36 rounded overflow-hidden hover:-translate-y-4 duration-500">
-                <img alt="ecommerce" class="object-contain object-center w-full h-full block"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1z0LC70CF3lPE1Xe-Uka4Y5sSlLzrAVHCQg&s">
+            <div
+              class="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer"
+              data-aos="fade-up-left"
+            >
+              <a
+                class="block relative h-36 rounded overflow-hidden hover:-translate-y-4 duration-500"
+              >
+                <img
+                  alt="ecommerce"
+                  class="object-contain object-center w-full h-full block"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1z0LC70CF3lPE1Xe-Uka4Y5sSlLzrAVHCQg&s"
+                />
               </a>
               <div class="mt-4">
-                <h2 class="text-gray-900 title-font text-lg text-center font-medium">Machine Learning</h2>
+                <h2
+                  class="text-gray-900 title-font text-lg text-center font-medium"
+                >
+                  Machine Learning
+                </h2>
               </div>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer" data-aos="fade-up-left">
-              <a class="block relative h-36 rounded overflow-hidden hover:-translate-y-4 duration-500">
-                <img alt="ecommerce" class="object-contain object-center w-full h-full block"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Google_Sheets_2020_Logo.svg/800px-Google_Sheets_2020_Logo.svg.png">
+            <div
+              class="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer"
+              data-aos="fade-up-left"
+            >
+              <a
+                class="block relative h-36 rounded overflow-hidden hover:-translate-y-4 duration-500"
+              >
+                <img
+                  alt="ecommerce"
+                  class="object-contain object-center w-full h-full block"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Google_Sheets_2020_Logo.svg/800px-Google_Sheets_2020_Logo.svg.png"
+                />
               </a>
               <div class="mt-4">
-                <h2 class="text-gray-900 title-font text-lg text-center font-medium">Data Analyst</h2>
+                <h2
+                  class="text-gray-900 title-font text-lg text-center font-medium"
+                >
+                  Data Analyst
+                </h2>
               </div>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer" data-aos="fade-up-left">
-              <a class="block relative h-36 rounded overflow-hidden hover:-translate-y-4 duration-500">
-                <img alt="ecommerce" class="object-contain object-center w-full h-full block"
-                  src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/3000/figma-logo-512.png">
-              </a>            
-              <div class="mt-4">
-                <h2 class="text-gray-900 title-font text-lg text-center font-medium">UI UX Design</h2>
-              </div>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer" data-aos="fade-up-left">
-              <a class="block relative h-36 rounded overflow-hidden hover:-translate-y-4 duration-500">
-                <img alt="ecommerce" class="object-contain object-center w-full h-full block"
-                  src="https://logo.com/image-cdn/images/kts928pd/production/182db37de1e6a8181342324363a5b39cdc11c989-346x345.png?w=1080&q=72&fm=webp">
+            <div
+              class="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer"
+              data-aos="fade-up-left"
+            >
+              <a
+                class="block relative h-36 rounded overflow-hidden hover:-translate-y-4 duration-500"
+              >
+                <img
+                  alt="ecommerce"
+                  class="object-contain object-center w-full h-full block"
+                  src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/3000/figma-logo-512.png"
+                />
               </a>
               <div class="mt-4">
-                <h2 class="text-gray-900 title-font text-lg text-center font-medium">Cyber Security</h2>
+                <h2
+                  class="text-gray-900 title-font text-lg text-center font-medium"
+                >
+                  UI UX Design
+                </h2>
               </div>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer" data-aos="fade-up-left">
-              <a class="block relative h-36 rounded overflow-hidden hover:-translate-y-4 duration-500">
-                <img alt="ecommerce" class="object-contain object-center w-full h-full block"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEpfFQ6JB2Dt3Ggku1PFToaRef4BTp8PViEg&s">
-              </a>            
+            <div
+              class="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer"
+              data-aos="fade-up-left"
+            >
+              <a
+                class="block relative h-36 rounded overflow-hidden hover:-translate-y-4 duration-500"
+              >
+                <img
+                  alt="ecommerce"
+                  class="object-contain object-center w-full h-full block"
+                  src="https://logo.com/image-cdn/images/kts928pd/production/182db37de1e6a8181342324363a5b39cdc11c989-346x345.png?w=1080&q=72&fm=webp"
+                />
+              </a>
               <div class="mt-4">
-                <h2 class="text-gray-900 title-font text-lg text-center font-medium">Digital Marketing</h2>
+                <h2
+                  class="text-gray-900 title-font text-lg text-center font-medium"
+                >
+                  Cyber Security
+                </h2>
+              </div>
+            </div>
+            <div
+              class="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer"
+              data-aos="fade-up-left"
+            >
+              <a
+                class="block relative h-36 rounded overflow-hidden hover:-translate-y-4 duration-500"
+              >
+                <img
+                  alt="ecommerce"
+                  class="object-contain object-center w-full h-full block"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEpfFQ6JB2Dt3Ggku1PFToaRef4BTp8PViEg&s"
+                />
+              </a>
+              <div class="mt-4">
+                <h2
+                  class="text-gray-900 title-font text-lg text-center font-medium"
+                >
+                  Digital Marketing
+                </h2>
               </div>
             </div>
           </div>
@@ -262,341 +443,653 @@
       </div>
     </section>
 
-  <!-- PROGRAM --> <!-- PROGRAM --> <!-- PROGRAM --> <!-- PROGRAM -->
+    <!-- PROGRAM -->
+    <!-- PROGRAM -->
+    <!-- PROGRAM -->
+    <!-- PROGRAM -->
 
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 pt-52 mx-auto">
-      <div class="flex flex-wrap w-full mb-20">
-        <div class="lg:w-1/2 w-full mb-6 lg:mb-0" data-aos="fade-up-right">
-          <h1 class="sm:text-4xl text-3xl font-semibold title-font mb-2 text-gray-900">Ikuti Program Kami</h1>
-          <div class="h-1 w-20 bg-[#2F3087] rounded mt-4"></div>
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 pt-52 mx-auto">
+        <div class="flex flex-wrap w-full mb-20">
+          <div class="lg:w-1/2 w-full mb-6 lg:mb-0" data-aos="fade-up-right">
+            <h1
+              class="sm:text-4xl text-3xl font-semibold title-font mb-2 text-gray-900"
+            >
+              Ikuti Program Kami
+            </h1>
+            <div class="h-1 w-20 bg-[#2F3087] rounded mt-4"></div>
+          </div>
+          <p
+            class="lg:w-1/2 w-full leading-relaxed text-gray-500"
+            data-aos="fade-up-left"
+          >
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            praesentium incidunt iusto fuga numquam inventore quod, eius laborum
+            nulla tempora molestiae debitis ratione qui iste quibusdam
+            accusantium mollitia voluptatibus minus.
+          </p>
         </div>
-        <p class="lg:w-1/2 w-full leading-relaxed text-gray-500" data-aos="fade-up-left">Lorem, ipsum dolor sit amet
-          consectetur adipisicing elit. Voluptates praesentium incidunt iusto fuga numquam inventore quod, eius laborum
-          nulla tempora molestiae debitis ratione qui iste quibusdam accusantium mollitia voluptatibus minus.</p>
-      </div>
-      <div class="relative">
-        <div class="flex flex-wrap mx-4 bg-transparent z-20 relative bg-red-800">
-          <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-up-right">
-            <div class="bg-white border-gray-200 border-opacity-60 border-2 p-6 rounded-lg hover:shadow-2xl cursor-pointer duration-500">
-              <img class="h-40 rounded w-full object-cover object-center mb-6"
-                src="https://img.freepik.com/free-photo/free-time-students-bachelor-s-campus-life-rhythm-five-friendly-students-are-walking_8353-6408.jpg?t=st=1726547564~exp=1726551164~hmac=523a63ce2ed08a9f0a4b9baa9531643b50fea4d8c84d3be22e393755e8554080&w=2000"
-                alt="content">
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Kuliah</h2>
-              <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon
-                disrupt edison bulbche.</p>
-            </div>
-          </div>
-          <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-up-right">
-            <div class="bg-white border-gray-200 border-opacity-60 border-2 p-6 rounded-lg hover:shadow-2xl cursor-pointer duration-500">
-              <img class="h-40 rounded w-full object-cover object-center mb-6"
-                src="https://img.freepik.com/free-photo/full-shot-students-cramming-together_23-2149647137.jpg?t=st=1726547889~exp=1726551489~hmac=244284659e9d774685a4c6a7c9bca4629f28ffe8838f4bc053e4d4d437850c4f&w=2000"
-                alt="content">
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Bootcamp</h2>
-              <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon
-                disrupt edison bulbche.</p>
-            </div>
-          </div>
-          <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-up-left">
-            <div class="bg-white border-gray-200 border-opacity-60 border-2 p-6 rounded-lg hover:shadow-2xl cursor-pointer duration-500">
-              <img class="h-40 rounded w-full object-cover object-center mb-6"
-                src="https://img.freepik.com/free-photo/high-angle-students-learning-library_23-2149647043.jpg?t=st=1726547904~exp=1726551504~hmac=4e9ef2c30915020c412481c3871ec767e229870267b4ff22ed7adcb71a018758&w=2000"
-                alt="content">
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Cari Kerja</h2>
-              <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon
-                disrupt edison bulbche.</p>
-            </div>
-          </div>
-          <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-up-left">
-            <div class="bg-white border-gray-200 border-opacity-60 border-2 p-6 rounded-lg hover:shadow-2xl cursor-pointer duration-500">
-              <img class="h-40 rounded w-full object-cover object-center mb-6"
-                src="https://img.freepik.com/free-photo/full-shot-student-library_23-2149647115.jpg?t=st=1726547942~exp=1726551542~hmac=7d50e2bcef059c27a8721dfd5488dc540bb063afe2be6b65297bd8c4043e6900&w=2000"
-                alt="content">
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">SemuaBisa Academy</h2>
-              <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon
-                disrupt edison bulbche.</p>
-            </div>
-          </div>
-        </div>
-        <span class="w-full h-64 background-linear-program rounded-xl z-0 absolute top-56">
-
-        </span>
-      </div>
-      </div>
-  </section>
-
-  <!-- BOOTCAMP --> <!-- BOOTCAMP --> <!-- BOOTCAMP --> <!-- BOOTCAMP -->
-
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 mt-28 py-52 mb-10 mx-auto">
-      <div class="flex flex-wrap -m-4">
-        <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
-          <h1 class="sm:text-4xl text-3xl font-semibold title-font mb-2 text-gray-900" data-aos="fade-up">Kelas Bootcamp Favorit</h1>
-          <p class="lg:w-1/2 w-full leading-relaxed text-gray-500" data-aos="fade-up">Lorem ipsum dolor, sit amet
-            consectetur adipisicing
-            elit. Asperiores expedita odio quaerat consequuntur magni neque?</p>
-        </div>
-        <div class="p-4 md:w-1/3" data-aos="fade-up-right">
-          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-            <div class="relative">
-              <img class="lg:h-48 md:h-36 w-full object-cover object-center"
-                src="https://img.freepik.com/free-photo/it-specialist-writing-html-script-binary-code-database-security_482257-92458.jpg?t=st=1726468493~exp=1726472093~hmac=9359e0780954daae1c97af7ae6ed1fb89e9d19123f7f948d002b62e11e5323a1&w=2000"
-                alt="blog">
-              <div id="pembungkus">
-                <p>Front-End Developer</p>
-              </div>
-            </div>
-            <div class="p-6">
-              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">FRONT-END
-                DEVELOPER</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Develop a Web Using HTML CSS
-              </h1>
-              <p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                laborum voluptates placeat iure?</p>
-              <div class="flex items-center flex-wrap ">
-                <a
-                  class="text-[#2F3087] inline-flex items-center md:mb-2 lg:mb-0 hover:px-3duration-500 hover:px-3 duration-500 cursor-pointer">Daftar
-                  Kursus
-                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-                <span
-                  class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
-                    stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle>
-                  </svg>1.2K
-                </span>
-                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
-                    stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path
-                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                    </path>
-                  </svg>6
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="p-4 md:w-1/3" data-aos="fade-up">
-          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-            <div class="relative">
-              <img class="lg:h-48 md:h-36 w-full object-cover object-center"
-                src="https://img.freepik.com/free-photo/html-css-collage-concept-with-person_23-2150062008.jpg?t=st=1726468496~exp=1726472096~hmac=2aa4c32e89fe4d08a72365588a2d28be6e058dbac61cf30ac7057853a4d1555e&w=2000"
-                alt="blog">
-              <div id="pembungkus">
-                <p>Machine Learning</p>
-              </div>
-            </div>
-            <div class="p-6">
-              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MACHINE
-                LEARNING</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">How Artificial Intelligence
-                Works</h1>
-              <p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deserunt praesentium placeat nemo odit?.</p>
-              <div class="flex items-center flex-wrap">
-                <a class="text-[#2F3087] inline-flex items-center md:mb-2 lg:mb-0 hover:px-3 duration-500 cursor-pointer">Daftar Kursus
-                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-                <span
-                  class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
-                    stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle>
-                  </svg>1.2K
-                </span>
-                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
-                    stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path
-                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                    </path>
-                  </svg>6
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="p-4 md:w-1/3" data-aos="fade-up-left">
-          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-            <div class="relative">
-              <img class="lg:h-48 md:h-36 w-full object-cover object-center"
-                src="https://img.freepik.com/free-photo/programer-coding-laptop-sitting-down-desk-with-computer-screens-parsing-code-software-agency-software-developer-compiling-algorithms-with-cloud-programers-working-background_482257-43993.jpg?t=st=1726468558~exp=1726472158~hmac=12d5e234bb01d3ef038d27a16671b9872c28690c21e00f60c6269955ddc8b1d3&w=1800"
-                alt="blog">
-              <div id="pembungkus">
-                <p>Back-End Developer</p>
-              </div>
-            </div>
-            <div class="p-6">
-              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">BACK-END
-                DEVELOPER</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Save Data With MySQL</h1>
-              <p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Vitae nesciunt ipsa repudiandae inventore.</p>
-              <div class="flex items-center flex-wrap ">
-                <a class="text-[#2F3087] inline-flex items-center md:mb-2 lg:mb-0 hover:px-3 duration-500 cursor-pointer">Daftar Kursus
-                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-                <span
-                  class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
-                    stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle>
-                  </svg>1.2K
-                </span>
-                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
-                    stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path
-                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                    </path>
-                  </svg>6
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FREELANCE --> <!-- FREELANCE --> <!-- FREELANCE --> <!-- FREELANCE -->
-
-  <div class="container mx-auto px-5 py-20 text-center rounded-xl shadow background-linear-freelance" data-aos="fade-up">
-    <h5 class="text-4xl px-5 font-bold text-white dark:text-white">Tawarkan Jasa Anda Disini</h5>
-    <p class="mt-5 mb-8 text- text-white sm:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat
-      fugit in quisquam quas at <br> officiis cumque voluptates aspernatur fugiat.</p>
-    <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
-      <button
-        class="ml-4 inline-flex hover:text-gray-700 hover:bg-white border-0 py-2 px-6 focus:outline-none bg-orange-500 text-white hover:shadow-xl duration-500 rounded text-lg">Tawarkan
-        Jasa</button>
-      <button
-        class="ml-4 inline-flex text-gray-700 bg-white border-0 py-2 px-6 focus:outline-none hover:bg-orange-500 hover:text-white hover:shadow-xl duration-500 rounded text-lg">Cari
-        Jasa</button>
-    </div>
-  </div>
-
-  <!-- LOWONGAN KERJA --> <!-- LOWONGAN KERJA --> <!-- LOWONGAN KERJA --> <!-- LOWONGAN KERJA -->
-
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 py-52 mx-auto">
-      <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-        <h1 class="sm:text-4xl text-3xl font-semibold title-font mb-2 text-gray-900" data-aos="fade-up">Cari Lowongan
-          Kerja Anda</h1>
-        <p class="lg:w-1/2 w-full leading-relaxed text-gray-500" data-aos="fade-up">Lorem ipsum dolor, sit amet
-          consectetur adipisicing
-          elit. Asperiores expedita odio quaerat consequuntur magni neque?</p>
-      </div>
-      <div class="flex flex-wrap -m-4">
-        <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up-right">
-          <div class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer">
-            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="w-6 h-6" viewBox="0 0 24 24">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4dcPnKxXMwjxS3_KAMnw8kz2UhRerwlWMgA&s"
-                  alt="">
-              </svg>
-            </div>
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">AWS Web Service</h2>
-            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke
-              farm.</p>
-          </div>
-        </div>
-        <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up">
-          <div class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer">
-            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="w-6 h-6" viewBox="0 0 24 24">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFdBNzCwzZYZZLvd6eyst4__z3g4W2EKUaaQ&s"
-                  alt="">
-              </svg>
-            </div>
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Dicoding Academy</h2>
-            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke
-              farm.</p>
-          </div>
-        </div>
-        <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up-left">
-          <div class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer">
-            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="w-6 h-6" viewBox="0 0 24 24">
+        <div class="relative">
+          <div
+            class="flex flex-wrap mx-4 bg-transparent z-20 relative bg-red-800"
+          >
+            <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-up-right">
+              <div
+                class="bg-white border-gray-200 border-opacity-60 border-2 p-6 rounded-lg hover:shadow-2xl cursor-pointer duration-500"
+              >
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/480px-Google_%22G%22_logo.svg.png"
-                  alt="">
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
+                  class="h-40 rounded w-full object-cover object-center mb-6"
+                  src="https://img.freepik.com/free-photo/free-time-students-bachelor-s-campus-life-rhythm-five-friendly-students-are-walking_8353-6408.jpg?t=st=1726547564~exp=1726551164~hmac=523a63ce2ed08a9f0a4b9baa9531643b50fea4d8c84d3be22e393755e8554080&w=2000"
+                  alt="content"
+                />
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                  Kuliah
+                </h2>
+                <p class="leading-relaxed text-base">
+                  Fingerstache flexitarian street art 8-bit waistcoat.
+                  Distillery hexagon disrupt edison bulbche.
+                </p>
+              </div>
             </div>
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Google Developer</h2>
-            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke
-              farm.</p>
-          </div>
-        </div>
-        <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up-right">
-          <div class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer">
-            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="w-6 h-6" viewBox="0 0 24 24">
-                <img src="https://cdn.pixabay.com/photo/2021/08/10/15/36/microsoft-6536268_1280.png" alt="">
-              </svg>
+            <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-up-right">
+              <div
+                class="bg-white border-gray-200 border-opacity-60 border-2 p-6 rounded-lg hover:shadow-2xl cursor-pointer duration-500"
+              >
+                <img
+                  class="h-40 rounded w-full object-cover object-center mb-6"
+                  src="https://img.freepik.com/free-photo/full-shot-students-cramming-together_23-2149647137.jpg?t=st=1726547889~exp=1726551489~hmac=244284659e9d774685a4c6a7c9bca4629f28ffe8838f4bc053e4d4d437850c4f&w=2000"
+                  alt="content"
+                />
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                  Bootcamp
+                </h2>
+                <p class="leading-relaxed text-base">
+                  Fingerstache flexitarian street art 8-bit waistcoat.
+                  Distillery hexagon disrupt edison bulbche.
+                </p>
+              </div>
             </div>
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Microsoft</h2>
-            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke
-              farm.</p>
+            <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-up-left">
+              <div
+                class="bg-white border-gray-200 border-opacity-60 border-2 p-6 rounded-lg hover:shadow-2xl cursor-pointer duration-500"
+              >
+                <img
+                  class="h-40 rounded w-full object-cover object-center mb-6"
+                  src="https://img.freepik.com/free-photo/high-angle-students-learning-library_23-2149647043.jpg?t=st=1726547904~exp=1726551504~hmac=4e9ef2c30915020c412481c3871ec767e229870267b4ff22ed7adcb71a018758&w=2000"
+                  alt="content"
+                />
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                  Cari Kerja
+                </h2>
+                <p class="leading-relaxed text-base">
+                  Fingerstache flexitarian street art 8-bit waistcoat.
+                  Distillery hexagon disrupt edison bulbche.
+                </p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-up-left">
+              <div
+                class="bg-white border-gray-200 border-opacity-60 border-2 p-6 rounded-lg hover:shadow-2xl cursor-pointer duration-500"
+              >
+                <img
+                  class="h-40 rounded w-full object-cover object-center mb-6"
+                  src="https://img.freepik.com/free-photo/full-shot-student-library_23-2149647115.jpg?t=st=1726547942~exp=1726551542~hmac=7d50e2bcef059c27a8721dfd5488dc540bb063afe2be6b65297bd8c4043e6900&w=2000"
+                  alt="content"
+                />
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                  SemuaBisa Academy
+                </h2>
+                <p class="leading-relaxed text-base">
+                  Fingerstache flexitarian street art 8-bit waistcoat.
+                  Distillery hexagon disrupt edison bulbche.
+                </p>
+              </div>
+            </div>
           </div>
+          <span
+            class="w-full h-64 background-linear-program rounded-xl z-0 absolute top-56"
+          >
+          </span>
         </div>
-        <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up">
-          <div class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer">
+      </div>
+    </section>
+
+    <!-- BOOTCAMP -->
+    <!-- BOOTCAMP -->
+    <!-- BOOTCAMP -->
+    <!-- BOOTCAMP -->
+
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 mt-28 py-52 mb-10 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div
+            class="flex flex-wrap w-full mb-10 flex-col items-center text-center"
+          >
+            <h1
+              class="sm:text-4xl text-3xl font-semibold title-font mb-2 text-gray-900"
+              data-aos="fade-up"
+            >
+              Kelas Bootcamp Favorit
+            </h1>
+            <p
+              class="lg:w-1/2 w-full leading-relaxed text-gray-500"
+              data-aos="fade-up"
+            >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Asperiores expedita odio quaerat consequuntur magni neque?
+            </p>
+          </div>
+          <div class="p-4 md:w-1/3" data-aos="fade-up-right">
             <div
-              class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="w-6 h-6" viewBox="0 0 24 24">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcp1Ocx4huQYSWiy-wb4CU2BZPUeTeZSW9HQ&s"
-                  alt="">
-              </svg>
+              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+            >
+              <div class="relative">
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="https://img.freepik.com/free-photo/it-specialist-writing-html-script-binary-code-database-security_482257-92458.jpg?t=st=1726468493~exp=1726472093~hmac=9359e0780954daae1c97af7ae6ed1fb89e9d19123f7f948d002b62e11e5323a1&w=2000"
+                  alt="blog"
+                />
+                <div id="pembungkus">
+                  <p>Front-End Developer</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <h2
+                  class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
+                >
+                  FRONT-END DEVELOPER
+                </h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  Develop a Web Using HTML CSS
+                </h1>
+                <p class="leading-relaxed mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  laborum voluptates placeat iure?
+                </p>
+                <div class="flex items-center flex-wrap">
+                  <a
+                    class="text-[#2F3087] inline-flex items-center md:mb-2 lg:mb-0 hover:px-3duration-500 hover:px-3 duration-500 cursor-pointer"
+                    >Daftar Kursus
+                    <svg
+                      class="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  <span
+                    class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"
+                  >
+                    <svg
+                      class="w-4 h-4 mr-1"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                      ></path>
+                      <circle cx="12" cy="12" r="3"></circle></svg
+                    >1.2K
+                  </span>
+                  <span
+                    class="text-gray-400 inline-flex items-center leading-none text-sm"
+                  >
+                    <svg
+                      class="w-4 h-4 mr-1"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
+                      ></path></svg
+                    >6
+                  </span>
+                </div>
+              </div>
             </div>
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Tokopedia IT Solution</h2>
-            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke
-              farm.</p>
           </div>
-        </div>
-        <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up-left">
-          <div class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer">
-            <div class="w-10 h-10 inline-flex items-center justify-center rounded-ful mb-4">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="w-6 h-6" viewBox="0 0 24 24">
-                <img src="https://banner2.cleanpng.com/20180714/ycl/aav2d20ra.webp" alt="">
-              </svg>
+          <div class="p-4 md:w-1/3" data-aos="fade-up">
+            <div
+              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+            >
+              <div class="relative">
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="https://img.freepik.com/free-photo/html-css-collage-concept-with-person_23-2150062008.jpg?t=st=1726468496~exp=1726472096~hmac=2aa4c32e89fe4d08a72365588a2d28be6e058dbac61cf30ac7057853a4d1555e&w=2000"
+                  alt="blog"
+                />
+                <div id="pembungkus">
+                  <p>Machine Learning</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <h2
+                  class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
+                >
+                  MACHINE LEARNING
+                </h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  How Artificial Intelligence Works
+                </h1>
+                <p class="leading-relaxed mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deserunt praesentium placeat nemo odit?.
+                </p>
+                <div class="flex items-center flex-wrap">
+                  <a
+                    class="text-[#2F3087] inline-flex items-center md:mb-2 lg:mb-0 hover:px-3 duration-500 cursor-pointer"
+                    >Daftar Kursus
+                    <svg
+                      class="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  <span
+                    class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"
+                  >
+                    <svg
+                      class="w-4 h-4 mr-1"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                      ></path>
+                      <circle cx="12" cy="12" r="3"></circle></svg
+                    >1.2K
+                  </span>
+                  <span
+                    class="text-gray-400 inline-flex items-center leading-none text-sm"
+                  >
+                    <svg
+                      class="w-4 h-4 mr-1"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
+                      ></path></svg
+                    >6
+                  </span>
+                </div>
+              </div>
             </div>
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Apple</h2>
-            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke
-              farm.</p>
+          </div>
+          <div class="p-4 md:w-1/3" data-aos="fade-up-left">
+            <div
+              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+            >
+              <div class="relative">
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="https://img.freepik.com/free-photo/programer-coding-laptop-sitting-down-desk-with-computer-screens-parsing-code-software-agency-software-developer-compiling-algorithms-with-cloud-programers-working-background_482257-43993.jpg?t=st=1726468558~exp=1726472158~hmac=12d5e234bb01d3ef038d27a16671b9872c28690c21e00f60c6269955ddc8b1d3&w=1800"
+                  alt="blog"
+                />
+                <div id="pembungkus">
+                  <p>Back-End Developer</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <h2
+                  class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
+                >
+                  BACK-END DEVELOPER
+                </h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  Save Data With MySQL
+                </h1>
+                <p class="leading-relaxed mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  nesciunt ipsa repudiandae inventore.
+                </p>
+                <div class="flex items-center flex-wrap">
+                  <a
+                    class="text-[#2F3087] inline-flex items-center md:mb-2 lg:mb-0 hover:px-3 duration-500 cursor-pointer"
+                    >Daftar Kursus
+                    <svg
+                      class="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  <span
+                    class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"
+                  >
+                    <svg
+                      class="w-4 h-4 mr-1"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                      ></path>
+                      <circle cx="12" cy="12" r="3"></circle></svg
+                    >1.2K
+                  </span>
+                  <span
+                    class="text-gray-400 inline-flex items-center leading-none text-sm"
+                  >
+                    <svg
+                      class="w-4 h-4 mr-1"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
+                      ></path></svg
+                    >6
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <button
-        class="flex mx-auto text-white bg-[#2F3087] border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg mt-10 sm:mt-14">Lihat
-        Lengkapnya</button>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER --> <!-- FOOTER --> <!-- FOOTER --> <!-- FOOTER -->
+    <!-- FREELANCE -->
+    <!-- FREELANCE -->
+    <!-- FREELANCE -->
+    <!-- FREELANCE -->
+
+    <div
+      class="container mx-auto px-5 py-20 text-center rounded-xl shadow background-linear-freelance"
+      data-aos="fade-up"
+    >
+      <h5 class="text-4xl px-5 font-bold text-white dark:text-white">
+        Tawarkan Jasa Anda Disini
+      </h5>
+      <p class="mt-5 mb-8 text- text-white sm:text-lg">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat
+        fugit in quisquam quas at <br />
+        officiis cumque voluptates aspernatur fugiat.
+      </p>
+      <div
+        class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse"
+      >
+        <button
+          class="ml-4 inline-flex hover:text-gray-700 hover:bg-white border-0 py-2 px-6 focus:outline-none bg-orange-500 text-white hover:shadow-xl duration-500 rounded text-lg"
+        >
+          Tawarkan Jasa
+        </button>
+        <button
+          class="ml-4 inline-flex text-gray-700 bg-white border-0 py-2 px-6 focus:outline-none hover:bg-orange-500 hover:text-white hover:shadow-xl duration-500 rounded text-lg"
+        >
+          Cari Jasa
+        </button>
+      </div>
+    </div>
+
+    <!-- LOWONGAN KERJA -->
+    <!-- LOWONGAN KERJA -->
+    <!-- LOWONGAN KERJA -->
+    <!-- LOWONGAN KERJA -->
+
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-52 mx-auto">
+        <div
+          class="flex flex-wrap w-full mb-20 flex-col items-center text-center"
+        >
+          <h1
+            class="sm:text-4xl text-3xl font-semibold title-font mb-2 text-gray-900"
+            data-aos="fade-up"
+          >
+            Cari Lowongan Kerja Anda
+          </h1>
+          <p
+            class="lg:w-1/2 w-full leading-relaxed text-gray-500"
+            data-aos="fade-up"
+          >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
+            expedita odio quaerat consequuntur magni neque?
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up-right">
+            <div
+              class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer"
+            >
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                >
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4dcPnKxXMwjxS3_KAMnw8kz2UhRerwlWMgA&s"
+                    alt=""
+                  />
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                AWS Web Service
+              </h2>
+              <p class="leading-relaxed text-base">
+                Fingerstache flexitarian street art 8-bit waist co, subway tile
+                poke farm.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up">
+            <div
+              class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer"
+            >
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                >
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFdBNzCwzZYZZLvd6eyst4__z3g4W2EKUaaQ&s"
+                    alt=""
+                  />
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Dicoding Academy
+              </h2>
+              <p class="leading-relaxed text-base">
+                Fingerstache flexitarian street art 8-bit waist co, subway tile
+                poke farm.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up-left">
+            <div
+              class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer"
+            >
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/480px-Google_%22G%22_logo.svg.png"
+                    alt=""
+                  />
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Google Developer
+              </h2>
+              <p class="leading-relaxed text-base">
+                Fingerstache flexitarian street art 8-bit waist co, subway tile
+                poke farm.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up-right">
+            <div
+              class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer"
+            >
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                >
+                  <img
+                    src="https://cdn.pixabay.com/photo/2021/08/10/15/36/microsoft-6536268_1280.png"
+                    alt=""
+                  />
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Microsoft
+              </h2>
+              <p class="leading-relaxed text-base">
+                Fingerstache flexitarian street art 8-bit waist co, subway tile
+                poke farm.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up">
+            <div
+              class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer"
+            >
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                >
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcp1Ocx4huQYSWiy-wb4CU2BZPUeTeZSW9HQ&s"
+                    alt=""
+                  />
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Tokopedia IT Solution
+              </h2>
+              <p class="leading-relaxed text-base">
+                Fingerstache flexitarian street art 8-bit waist co, subway tile
+                poke farm.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up-left">
+            <div
+              class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer"
+            >
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-ful mb-4"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                >
+                  <img
+                    src="https://banner2.cleanpng.com/20180714/ycl/aav2d20ra.webp"
+                    alt=""
+                  />
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Apple
+              </h2>
+              <p class="leading-relaxed text-base">
+                Fingerstache flexitarian street art 8-bit waist co, subway tile
+                poke farm.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="flex mx-auto text-white bg-[#2F3087] border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg mt-10 sm:mt-14"
+        >
+          Lihat Lengkapnya
+        </button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <!-- FOOTER -->
 
   <footer class="bg-white rounded-lg mb-5 mt-40">
     <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
@@ -623,37 +1116,34 @@
     </div>
   </footer>
 
-  <script>
-    AOS.init();
-  </script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-
-      const openModalButton = document.getElementById('open-modal');
-      const closeModalButton = document.getElementById('close-modal');
-      const modal = document.getElementById('select-modal');
 
 
-      openModalButton.addEventListener('click', function () {
-        modal.classList.remove('hidden');
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const openModalButton = document.getElementById("open-modal");
+        const closeModalButton = document.getElementById("close-modal");
+        const modal = document.getElementById("select-modal");
+
+        openModalButton.addEventListener("click", function () {
+          modal.classList.remove("hidden");
+        });
+
+        closeModalButton.addEventListener("click", function () {
+          modal.classList.add("hidden");
+        });
+
+        window.addEventListener("click", function (event) {
+          if (event.target === modal) {
+            modal.classList.add("hidden");
+          }
+        });
       });
+    </script>
 
-
-      closeModalButton.addEventListener('click', function () {
-        modal.classList.add('hidden');
-      });
-
-
-      window.addEventListener('click', function (event) {
-        if (event.target === modal) {
-          modal.classList.add('hidden');
-        }
-      });
-    });
-  </script>
-
-  <script src="main.js"></script>
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>
