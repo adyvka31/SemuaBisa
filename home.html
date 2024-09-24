@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SemuaBisa</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="icon" href="Images/logo.png" type="image/png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2F3087",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-white overflow-x-hidden max-w-screen-2xl">
+    <section class="border-2 border-gray-200 border-opacity-60 relative mb-32">
+      <!-- NAVBAR -->
+      <!-- NAVBAR -->
+      <!-- NAVBAR -->
+      <!-- NAVBAR -->
+
+      <nav class="fixed w-full bg-white top-0 start-0 border-b z-50">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <!-- Logo -->
+          <a href="#" class="flex items-center space-x-3">
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap text-black"
+            >
+              <span class="blue font-bold">SemuaBisa</span
+              ><span class="text-orange-400 font-bold">.com</span>
+            </span>
+          </a>
+
+          <!-- Nav link -->
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="garis relative block font-bold py-2 px-3 text-black rounded md:bg-transparent md:text-primarbg-primary md:p-0"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primarbg-primary md:p-0 md:dark:hover:text-primarbg-primary dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Materi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primarbg-primary md:p-0 md:dark:hover:text-primarbg-primary dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Lowongan Kerja</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primarbg-primary md:p-0 md:dark:hover:text-primarbg-primary dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Jasa</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Profile -->
+          <div
+            class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="flex text-sm bg-gray-100 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300"
+              id="user-menu-button"
+              aria-expanded="false"
+              data-dropdown-toggle="user-dropdown"
+              data-dropdown-placement="bottom"
+            >
+              <span class="sr-only">Open user menu</span>
+              <img
+                class="w-8 h-auto rounded-full"
+                src="/Images/profile.png"
+                alt="user photo"
+              />
+            </button>
+            <!-- Dropdown menu -->
+            <div
+              class="z-50 hidden my-4 text-base list-none bg-gray-50 divide-y rounded-lg shadow border"
+              id="user-dropdown"
+            >
+              <div class="px-4 py-3">
+                <span class="block text-sm text-gray-900"
+                  >Smitty Werben Man Jensen</span
+                >
+                <span class="block text-sm text-gray-500 truncate"
+                  >smitty@werben.com</span
+                >
+              </div>
+              <ul class="py-2" aria-labelledby="user-menu-button">
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >Profil</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >Administrasi</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >Keluar</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <button
+              data-collapse-toggle="navbar-user"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-user"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <div
+      class="bg-white w-full flex flex-col gap-5 px-3 md:px-16 lg:px-12 md:flex-row text-[#161931] -mt-20"
+    >
+      <aside class="hidden py-4 md:w-1/5 md:block">
+        <div
+          class="sticky flex flex-col gap-2 p-4 text-sm border-r border-indigo-100 top-12"
+        >
+          <h2 class="pl-3 mb-4 text-2xl font-semibold">Profil</h2>
+
+          <a
+            href="#"
+            class="flex items-center px-3 py-2.5 font-bold bg-white text-indigo-900 border rounded-full"
+          >
+            Pubic Profile
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-3 py-2.5 font-semibold hover:text-indigo-900 hover:border hover:rounded-full"
+          >
+            Account Settings
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-3 py-2.5 font-semibold hover:text-indigo-900 hover:border hover:rounded-full"
+          >
+            Notifications
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-3 py-2.5 font-semibold hover:text-indigo-900 hover:border hover:rounded-full"
+          >
+            PRO Account
+          </a>
+        </div>
+      </aside>
+      <main class="w-full min-h-screen py-1 md:w-2/3 lg:w-3/4 bg-red-600">
+        <div class="p-2 md:p-4">
+          <div class="w-full px-6 pb-8 mt-8 sm:max-w-xl sm:rounded-lg">
+            <h2 class="pl-6 text-2xl font-bold sm:text-xl">Public Profile</h2>
+
+            <div class="grid max-w-2xl mx-auto mt-8">
+              <div
+                class="flex flex-col items-center space-y-5 sm:flex-row sm:space-y-0"
+              >
+                <img
+                  class="object-cover w-40 h-40 p-1 rounded-full ring-2 ring-indigo-300 dark:ring-indigo-500"
+                  src="./Images/profile.png"
+                  alt="Bordered avatar"
+                />
+
+                <div class="relative flex flex-col space-y-5 sm:ml-8">
+                  <button
+                    type="button"
+                    class="py-3.5 px-7 text-base font-medium text-indigo-100 focus:outline-none bg-[#202142] rounded-lg border border-indigo-200 hover:bg-indigo-900 focus:z-10 focus:ring-4 focus:ring-indigo-200"
+                  >
+                    Change picture
+                    <input
+                      type="file"
+                      name=""
+                      id=""
+                      class="absolute inset-0 opacity-0 cursor-pointer"
+                    />
+                  </button>
+                </div>
+              </div>
+
+              <div class="items-center mt-8 sm:mt-14 text-[#202142]">
+                <div
+                  class="flex flex-col items-center w-full mb-2 space-x-0 space-y-2 sm:flex-row sm:space-x-4 sm:space-y-0 sm:mb-6"
+                >
+                  <div class="w-full">
+                    <label
+                      for="first_name"
+                      class="block mb-2 text-sm font-medium text-indigo-900 dark:text-white"
+                      >Your first name</label
+                    >
+                    <input
+                      type="text"
+                      id="first_name"
+                      class="bg-indigo-50 border border-indigo-300 text-indigo-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"
+                      placeholder="Your first name"
+                      value="Jane"
+                      required
+                    />
+                  </div>
+
+                  <div class="w-full">
+                    <label
+                      for="last_name"
+                      class="block mb-2 text-sm font-medium text-indigo-900 dark:text-white"
+                      >Your last name</label
+                    >
+                    <input
+                      type="text"
+                      id="last_name"
+                      class="bg-indigo-50 border border-indigo-300 text-indigo-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"
+                      placeholder="Your last name"
+                      value="Ferguson"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="mb-2 sm:mb-6">
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-indigo-900 dark:text-white"
+                    >Your email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="bg-indigo-50 border border-indigo-300 text-indigo-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"
+                    placeholder="your.email@mail.com"
+                    required
+                  />
+                </div>
+
+                <div class="mb-2 sm:mb-6">
+                  <label
+                    for="profession"
+                    class="block mb-2 text-sm font-medium text-indigo-900 dark:text-white"
+                    >Profession</label
+                  >
+                  <input
+                    type="text"
+                    id="profession"
+                    class="bg-indigo-50 border border-indigo-300 text-indigo-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"
+                    placeholder="your profession"
+                    required
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label
+                    for="message"
+                    class="block mb-2 text-sm font-medium text-indigo-900 dark:text-white"
+                    >Bio</label
+                  >
+                  <textarea
+                    id="message"
+                    rows="4"
+                    class="block p-2.5 w-full text-sm text-indigo-900 bg-indigo-50 rounded-lg border border-indigo-300 focus:ring-indigo-500 focus:border-indigo-500"
+                    placeholder="Write your bio here..."
+                  ></textarea>
+                </div>
+
+                <div class="flex justify-end">
+                  <button
+                    type="submit"
+                    class="text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800"
+                  >
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  </body>
+</html>
