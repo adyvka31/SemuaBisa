@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="style/style.css" />
     <link rel="icon" href="Images/logo.png" type="image/png" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
@@ -55,158 +52,81 @@
     </section> -->
     <!-- pop up atas end -->
 
+    <div class="intro">
+      <h1 class="logo-header" >
+        <span class="logo blue font-bold text-5xl">SemuaBisa</span><span class="logo text-orange-400 font-bold text-5xl">.Com</span><br>
+      </h1>
+    </div>
+
     <section class="max-w-screen-2xl relative mb-32">
       <!-- NAVBAR -->
       <!-- NAVBAR -->
       <!-- NAVBAR -->
       <!-- NAVBAR -->
 
-      <nav class="fixed w-full bg-white top-0 start-0 border-b z-50">
-        <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-        >
-          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <span
-              class="self-center text-2xl font-semibold whitespace-nowrap text-black"
-              ><span class="blue font-bold">Semua</span
-              ><span class="text-orange-400 font-bold">Bisa</span></span
-            >
-          </a>
-          <div
-            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
-          >
-            <a
-              href="auth/register.html"
-              class="inline-flex items-center bg-primary border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl text-white duration-500 rounded-full text-base mt-4 md:mt-0"
-            >
-              Daftar
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-4 h-4 ml-1"
-                viewBox="0 0 24 24"
-              >
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
+      <nav id="navbar" class="fixed w-full bg-white top-0 left-0 z-50 transition-all duration-300 ">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-black">
+                    <span class="blue font-bold">SemuaBisa</span>
+                    <span class="text-orange-400 font-bold">.com</span>
+                </span>
             </a>
-            <button
-              data-collapse-toggle="navbar-sticky"
-              type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-sticky"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
-          </div>
-          <div
-            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-            id="navbar-sticky"
-          >
-            <ul
-              class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
-            >
-              <li>
-                <a
-                  href="Index.html"
-                  class="garis relative block font-bold py-2 px-3 text-black rounded md:bg-transparent md:text-primary md:p-0"
-                  aria-current="page"
-                  >Home</a
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <a href="auth/register.html" class="inline-flex items-center bg-[#2F3087] border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl text-white duration-500 rounded-full text-base mt-4 md:mt-0">
+                    Daftar
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+                <button
+                  data-collapse-toggle="navbar-sticky"
+                  type="button"
+                  class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                  aria-controls="navbar-sticky"
+                  aria-expanded="false"
                 >
-              </li>
-              <li>
-                <a
-                  href="kuliah.html"
-                  class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-primary dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Kuliah</a
-                >
-              </li>
-              <li>
-                <a
-                  href="bootcamp.html"
-                  class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-primary dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  Bootcamp</a
-                >
-              </li>
-              <li>
-                <a
-                  href="jasa.html"
-                  class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-primary dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Jasa</a
-                >
-              </li>
-              <li>
-                <a
-                  href="lowongan-kerja.html"
-                  class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-primary dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Lowongan Kerja</a
-                >
-              </li>
-            </ul>
-          </div>
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                    <li>
+                        <a href="Index.html" class="garis relative block font-bold py-2 px-3 text-black rounded md:bg-transparent md:text-[#2F3087] md:p-0" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="kuliah.html" class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#2F3087] md:p-0">Kuliah</a>
+                    </li>
+                    <li>
+                        <a href="bootcamp.html" class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#2F3087] md:p-0">Bootcamp</a>
+                    </li>
+                    <li>
+                        <a href="jasa.html" class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#2F3087] md:p-0">Jasa</a>
+                    </li>
+                    <li>
+                        <a href="lowongan-kerja.html" class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#2F3087] md:p-0">Lowongan Kerja</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
+    
 
-      <!-- HERO -->
-      <!-- HERO -->
-      <!-- HERO -->
-      <!-- HERO -->
+      <!-- HERO --> <!-- HERO --> <!-- HERO --> <!-- HERO -->
 
       <section class="text-gray-600 body-font">
-        <div
-          class="container mx-auto flex px-5 py-40 items-center justify-center flex-col"
-          data-aos="fade-up"
-        >
-          <img
-            class="absolute w-32 right-32 bottom-0"
-            src="Images/ellipes.png"
-            alt=""
-          />
-          <img
-            class="absolute w-32 left-20 bottom-80"
-            src="Images/ellipes.png"
-            alt=""
-          />
+        <div class="container mx-auto flex px-5 py-40 items-center justify-center flex-col" data-aos="fade-up">
+          <img class="absolute w-32 right-32 bottom-0" src="Images/ellipes.png" alt="" />
+          <img class="absolute w-32 left-20 bottom-80" src="Images/ellipes.png" alt="" />
           <div class="text-center lg:w-2/3 w-full mt-36">
-            <h1
-              class="title-font sm:text-5xl text-4xl mb- font-bold mb-3 text-gray-900"
-            >
-              Kembangkan Skill Di <span class="blue font-bold">Semua</span
-              ><span class="text-orange-400 font-bold">Bisa</span>
-            </h1>
-            <p class="mb-10 text-base leading-relaxed">
-              - Menanam Bakat Pemuda Indonesia -
-            </p>
+            <h1 class="title-font sm:text-5xl text-4xl mb- font-bold mb-3 text-gray-900">Kembangkan Skill Di <span class="blue font-bold">SemuaBisa</span><span class="text-orange-400 font-bold">.com</span></h1>
+            <p class="mb-10 text-base leading-relaxed">- Menanam Bakat Pemuda Indonesia -</p>
             <div class="flex justify-center">
-              <button
-                class="inline-flex text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg"
-              >
-                Lebih Lengkap
-              </button>
-              <button
-                class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-primary hover:text-white hover:shadow-xl duration-500 rounded text-lg"
-              >
-                Tentang
-              </button>
+              <a href="#tentangkami" class="inline-flex text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg">Lebih Lengkap</a href="#tentangkami">
+              <a href="#tentangkami" class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-primary hover:text-white hover:shadow-xl duration-500 rounded text-lg">Tentang</a href="#tentangkami">
             </div>
           </div>
         </div>
@@ -214,105 +134,50 @@
 
       <section class="text-gray-600 body-font absolute w-full bottom-[-7rem]">
         <div class="container py-14 mx-auto bg-white shadow-2xl rounded-lg">
-          <div
-            class="lg:w-3/4 flex flex-col sm:flex-row sm:items-center items-start mx-auto"
-            data-aos="fade-up"
-          >
-            <h1 class="flex-grow text-2xl font-medium title-font text-gray-900">
-              Berbagai Jurusan dan Bootcamp Terbaik 100%
-              <span class="text-primary font-bold">GRATIS</span>
-            </h1>
+          <div class="lg:w-3/4 flex flex-col sm:flex-row sm:items-center items-start mx-auto" data-aos="fade-up">
+            <h1 class="flex-grow text-2xl font-medium title-font text-gray-900">Di <span class="blue font-bold">SemuaBisa</span><span class="text-orange-400 font-bold">.com</span> Berbagai Kursus dan Bootcamp Terbaik 100% GRATIS</h1>
             <img src="Images/panah.png" alt="" class="w-44 ml-5 h-20 mr-20" />
-            <button
-              class="flex-shrink-0 text-white bg-primary border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg mt-10 sm:mt-0"
-            >
-              Daftar Sekarang!!
-            </button>
+            <a href="auth/register.html" class="flex-shrink-0 text-white bg-[#2F3087] border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg mt-10 sm:mt-0">Daftar Sekarang!!</a>
           </div>
         </div>
       </section>
     </section>
 
-    <!-- TENTANG KAMI -->
-    <!-- TENTANG KAMI -->
-    <!-- TENTANG KAMI -->
-    <!-- TENTANG KAMI -->
+    <!-- TENTANG KAMI --> <!-- TENTANG KAMI --> <!-- TENTANG KAMI --> <!-- TENTANG KAMI -->
 
     <section class="text-gray-600 body-font">
-      <div
-        class="container mx-auto py-52 flex px-5 md:flex-row flex-col items-center"
-      >
-        <div
-          class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
-          data-aos="fade-up-right"
-        >
-          <img
-            class="object-cover object-center rounded"
-            alt="hero"
-            src="Images/asset-tentang-kami.png"
-          />
+      <div id="tentangkami" class="container mx-auto py-52 flex px-5 md:flex-row flex-col items-center">
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0" data-aos="fade-up-right">
+          <img class="object-cover object-center rounded" alt="hero" src="Images/asset-tentang-kami.png" />
         </div>
-        <div
-          class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
-          data-aos="fade-up-left"
-        >
-          <span
-            class="inline-block py-1 px-2 rounded bg-indigo-50 text-primarbg-primary text-xs font-medium tracking-widest mb-4"
-            >Kenapa Harus <span class="blue font-bold">Semua</span
-            ><span class="text-orange-400 font-bold">Bisa</span></span
+        <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center" data-aos="fade-up-left">
+          <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-primarbg-primary text-xs font-medium tracking-widest mb-4"
+            >Kenapa Harus <span class="blue font-bold">SemuaBisa</span><span class="text-orange-400 font-bold">.com</span></span
           >
-          <h1
-            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
-          >
-            Karena Dengan <span class="blue font-bold">Semua</span
-            ><span class="text-orange-400 font-bold">Bisa</span>
-          </h1>
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Karena Dengan <span class="blue font-bold">SemuaBisa</span><span class="text-orange-400 font-bold">.com</span></h1>
           <p class="mb-8 leading-relaxed">
-            Siapapun Bisa Jadi Ahli Teknologi! Kuliah dan bootcamp GRATIS ini
-            akan membantumu memahami dunia teknologi mulai dari dasar hingga
-            tingkat lanjut. Dapatkan pengetahuan dan keterampilan baru yang akan
-            membuka peluang baru dalam kariermu.
+            Siapapun Bisa Jadi Ahli Teknologi! Kursus online GRATIS ini akan membantumu memahami dunia teknologi mulai dari dasar hingga tingkat lanjut. Dapatkan pengetahuan dan keterampilan baru yang akan membuka peluang baru dalam
+            kariermu.
           </p>
           <div class="flex justify-center">
-            <button
-              class="flex-shrink-0 text-white bg-primary border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg mt-10 sm:mt-0"
-            >
-              Pelajari Lebih Lanjut
-            </button>
+            <a href="#kategori" class="flex-shrink-0 text-white bg-primary border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg mt-10 sm:mt-0">Pelajari Lebih Lanjut</a href="#kategori">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- KATEGORI -->
-    <!-- KATEGORI -->
-    <!-- KATEGORI -->
-    <!-- KATEGORI -->
+    <!-- KATEGORI --> <!-- KATEGORI --> <!-- KATEGORI --> <!-- KATEGORI -->
 
     <section class="text-gray-600 body-font">
-      <div
-        class="container mx-auto flex px-5 pt-10 md:flex-row flex-col items-center"
-      >
-        <div
-          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
-          data-aos="fade-up-right"
-        >
-          <h1
-            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
-          >
-            Jelajahi Kategori <br class="hidden lg:inline-block" />
+      <div id="kategori" class="container mx-auto flex px-5 pt-10 md:flex-row flex-col items-center">
+        <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center" data-aos="fade-up-right">
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+            Jelajahi Semua Kategori <br class="hidden lg:inline-block" />
+            <span class="blue font-bold">SemuaBisa</span><span class="text-orange-400 font-bold">.com</span>
           </h1>
-          <p class="mb-8 w-96 leading-relaxed">
-            Beragam jenis kategori teknologi digital yang tersedia pada
-            <span class="blue font-bold">Semua</span
-            ><span class="text-orange-400 font-bold">Bisa</span>
-          </p>
+          <p class="mb-8 w-96 leading-relaxed">Kami memiliki banyak sekali kategori yang kami sediakan untuk materi bootcamp. Tunggu apa lagi? kuasai seluruh materi yang ada disini!</p>
           <div class="flex justify-center">
-            <button
-              class="flex-shrink-0 text-white bg-primary border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg mt-10 sm:mt-0"
-            >
-              Lihat Lengkapnya
-            </button>
+            <a href="bootcamp.html" class="flex-shrink-0 text-white bg-primary border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg mt-10 sm:mt-0">Lihat Lengkapnya</a href="bootcamp.html">
           </div>
         </div>
         <div class="container px-5 mx-auto">
@@ -487,151 +352,91 @@
                 </h2>
               </div>
             </div>
-          </div>
-        </div>
       </div>
     </section>
 
-    <!-- PROGRAM -->
-    <!-- PROGRAM -->
-    <!-- PROGRAM -->
-    <!-- PROGRAM -->
+    <!-- PROGRAM --> <!-- PROGRAM --> <!-- PROGRAM --> <!-- PROGRAM -->
 
     <section class="text-gray-600 body-font">
       <div class="container px-5 pt-52 mx-auto">
         <div class="flex flex-wrap w-full mb-20">
           <div class="lg:w-1/2 w-full mb-6 lg:mb-0" data-aos="fade-up-right">
-            <h1
-              class="sm:text-4xl text-3xl font-semibold title-font mb-2 text-gray-900"
-            >
-              Siapkan Masa Depan Anda dengan Program Kami
-            </h1>
-            <div class="h-1 w-20 bg-primary rounded mt-4"></div>
+            <h1 class="sm:text-4xl text-3xl font-semibold title-font mb-2 text-gray-900">Ikuti Program Kami</h1>
+            <div class="h-1 w-20 bg-[#2F3087] rounded mt-4"></div>
           </div>
-          <p
-            class="lg:w-1/2 w-full leading-relaxed text-gray-500"
-            data-aos="fade-up-left"
-          >
-            Raih peluang lebih besar dengan mengikuti program-program yang
-            mendukung perkembangan Anda. Baik Anda ingin belajar secara intensif
-            di bootcamp, kuliah interaktif, atau mempersiapkan diri menghadapi
-            dunia kerja – kami siap membantu Anda mencapainya.
+          <p class="lg:w-1/2 w-full leading-relaxed text-gray-500" data-aos="fade-up-left">
+            Di bawah ini adalah beberapa program sekaligus fitur keunggulan yang ada di website kami. Jelajahi dan ikuti semua program terbaik kami disini.
           </p>
         </div>
         <div class="relative">
-          <div class="flex flex-wrap mx-4 bg-transparent z-20 relative">
+          <div class="flex flex-wrap mx-4 bg-transparent z-20 relative bg-red-800">
             <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-up-right">
-              <div
-                class="bg-white border-gray-200 border-opacity-60 border-2 p-6 rounded-lg hover:shadow-2xl cursor-pointer duration-500 h-full flex flex-col"
-              >
-                <img
+              <div class="bg-white border-gray-200 border-opacity-60 border-2 p-6 rounded-lg hover:shadow-2xl cursor-pointer duration-500">
+                <a href="kuliah.html">
+                  <img
                   class="h-40 rounded w-full object-cover object-center mb-6"
                   src="https://img.freepik.com/free-photo/free-time-students-bachelor-s-campus-life-rhythm-five-friendly-students-are-walking_8353-6408.jpg?t=st=1726547564~exp=1726551164~hmac=523a63ce2ed08a9f0a4b9baa9531643b50fea4d8c84d3be22e393755e8554080&w=2000"
                   alt="content"
-                />
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                  Kuliah
-                </h2>
-                <p class="leading-relaxed text-base mb-auto">
-                  Belajar online secara synchronous dengan sesi live, interaksi
-                  langsung dengan pengajar, dan materi yang relevan dengan
-                  industri.
-                </p>
+                  />
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Kuliah</h2>
+                  <p class="leading-relaxed text-base">Daftar diri kalian di perkuliahan SemuaBisa dengan materi dan lulusan terbaik.</p>
               </div>
+                </a>
             </div>
             <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-up-right">
-              <div
-                class="bg-white border-gray-200 border-opacity-60 border-2 p-6 rounded-lg hover:shadow-2xl cursor-pointer duration-500 h-full flex flex-col"
-              >
-                <img
+              <div class="bg-white border-gray-200 border-opacity-60 border-2 p-6 rounded-lg hover:shadow-2xl cursor-pointer duration-500">
+                <a href="bootcamp.html">
+                  <img
                   class="h-40 rounded w-full object-cover object-center mb-6"
                   src="https://img.freepik.com/free-photo/full-shot-students-cramming-together_23-2149647137.jpg?t=st=1726547889~exp=1726551489~hmac=244284659e9d774685a4c6a7c9bca4629f28ffe8838f4bc053e4d4d437850c4f&w=2000"
                   alt="content"
                 />
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                  Bootcamp
-                </h2>
-                <p class="leading-relaxed text-base mb-auto">
-                  Belajar mandiri melalui asynchronous (self-paced learning)
-                  dengan fleksibilitas penuh untuk meningkatkan keterampilan di
-                  bidang teknologi.
-                </p>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Bootcamp</h2>
+                <p class="leading-relaxed text-base">Ikuti beberapa bootcamp yang di sediakan disini untuk meningkatkan skill dan pengetahuan kita.</p>
+                </a>
               </div>
             </div>
             <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-up-left">
-              <div
-                class="bg-white border-gray-200 border-opacity-60 border-2 p-6 rounded-lg hover:shadow-2xl cursor-pointer duration-500 h-full flex flex-col"
-              >
-                <img
+              <div class="bg-white border-gray-200 border-opacity-60 border-2 p-6 rounded-lg hover:shadow-2xl cursor-pointer duration-500">
+                <a href="lowongan-kerja.html">
+                  <img
                   class="h-40 rounded w-full object-cover object-center mb-6"
                   src="https://img.freepik.com/free-photo/high-angle-students-learning-library_23-2149647043.jpg?t=st=1726547904~exp=1726551504~hmac=4e9ef2c30915020c412481c3871ec767e229870267b4ff22ed7adcb71a018758&w=2000"
                   alt="content"
                 />
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                  Cari Kerja
-                </h2>
-                <p class="leading-relaxed text-base mb-auto">
-                  Akses peluang kerja dari perusahaan ternama dan temukan karier
-                  impian Anda melalui program link & match kami.
-                </p>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Cari Kerja</h2>
+                <p class="leading-relaxed text-base">Kesulitan mencari kerja? kami menyediakan fitur lowongan kerja untuk mempermudah mendapatkan pekerjaan</p>
+                </a>
               </div>
             </div>
             <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-up-left">
-              <div
-                class="bg-white border-gray-200 border-opacity-60 border-2 p-6 rounded-lg hover:shadow-2xl cursor-pointer duration-500 h-full flex flex-col"
-              >
+              <div class="bg-white border-gray-200 border-opacity-60 border-2 p-6 rounded-lg hover:shadow-2xl cursor-pointer duration-500">
                 <img
                   class="h-40 rounded w-full object-cover object-center mb-6"
                   src="https://img.freepik.com/free-photo/full-shot-student-library_23-2149647115.jpg?t=st=1726547942~exp=1726551542~hmac=7d50e2bcef059c27a8721dfd5488dc540bb063afe2be6b65297bd8c4043e6900&w=2000"
                   alt="content"
                 />
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                  SemuaBisa Academy
-                </h2>
-                <p class="leading-relaxed text-base mb-auto">
-                  Jadi mentor dan berikan kontribusi nyata dengan membimbing
-                  generasi masa depan di program kuliah atau bootcamp.
-                </p>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">SemuaBisa Academy</h2>
+                <p class="leading-relaxed text-base">Semua bisa mengikuti program SemuaBisa Academy ini dengan syarat dan ketentuan berlaku.</p>
               </div>
             </div>
           </div>
-          <span
-            class="w-full h-64 mt-6 background-linear-program rounded-xl z-0 absolute top-56"
-          >
-          </span>
+          <span class="w-full h-64 background-linear-program rounded-xl z-0 absolute top-56"> </span>
         </div>
       </div>
     </section>
 
-    <!-- BOOTCAMP -->
-    <!-- BOOTCAMP -->
-    <!-- BOOTCAMP -->
-    <!-- BOOTCAMP -->
+    <!-- BOOTCAMP --> <!-- BOOTCAMP --> <!-- BOOTCAMP --> <!-- BOOTCAMP -->
 
     <section class="text-gray-600 body-font">
-      <div class="container px-5 pt-52 mb-10 mx-auto">
+      <div class="container px-5 mt-28 py-52 mb-10 mx-auto">
         <div class="flex flex-wrap -m-4">
-          <div
-            class="flex flex-wrap w-full mb-10 flex-col items-center text-center"
-          >
-            <h1
-              class="sm:text-4xl text-3xl font-semibold title-font mb-2 text-gray-900"
-              data-aos="fade-up"
-            >
-              Kelas Bootcamp Favorit
-            </h1>
-            <p
-              class="lg:w-1/2 w-full leading-relaxed text-gray-500"
-              data-aos="fade-up"
-            >
-              Belajar fleksibel, praktis, dan sesuai kebutuhan industri.
-              Tingkatkan keterampilan Anda sekarang!
-            </p>
+          <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
+            <h1 class="sm:text-4xl text-3xl font-semibold title-font mb-2 text-gray-900" data-aos="fade-up">Kelas Bootcamp Favorit</h1>
+            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500" data-aos="fade-up">Berikut di bawah ini 3 kelas bootcamp terbaik dan terfavorit di SemuaBisa</p>
           </div>
           <div class="p-4 md:w-1/3" data-aos="fade-up-right">
-            <div
-              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
-            >
+            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <div class="relative">
                 <img
                   class="lg:h-48 md:h-36 w-full object-cover object-center"
@@ -643,79 +448,34 @@
                 </div>
               </div>
               <div class="p-6">
-                <h2
-                  class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
-                >
-                  FRONT-END DEVELOPER
-                </h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                  Develop a Web Using HTML CSS
-                </h1>
-                <p class="leading-relaxed mb-3">
-                  Belajar membuat website dari awal dengan HTML dan CSS untuk
-                  desain yang responsif dan menarik.
-                </p>
+                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">FRONT-END DEVELOPER</h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Develop a Web Using HTML CSS</h1>
+                <p class="leading-relaxed mb-3">Membuat website interaktif dan responsif hanya menggunakan HTML, CSS. Kursus terbaik dalam pembuatan website.</p>
                 <div class="flex items-center flex-wrap">
-                  <a
-                    class="text-primary inline-flex items-center md:mb-2 lg:mb-0 hover:px-3duration-500 hover:px-3 duration-500 cursor-pointer"
+                  <a href="detail-bootcamp.html" class="text-[#2F3087] inline-flex items-center md:mb-2 lg:mb-0 hover:px-3duration-500 hover:px-3 duration-500 cursor-pointer"
                     >Daftar Kursus
-                    <svg
-                      class="w-4 h-4 ml-2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M5 12h14"></path>
                       <path d="M12 5l7 7-7 7"></path>
                     </svg>
                   </a>
-                  <span
-                    class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"
-                  >
-                    <svg
-                      class="w-4 h-4 mr-1"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
-                      ></path>
-                      <circle cx="12" cy="12" r="3"></circle>
-                    </svg>
+                  <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle></svg>
                     1.2K
                   </span>
-                  <span
-                    class="text-gray-400 inline-flex items-center leading-none text-sm"
-                  >
-                    <svg
-                      class="w-4 h-4 mr-1"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
-                      ></path></svg
-                    >6
+                  <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path></svg>
+                    6
                   </span>
                 </div>
               </div>
             </div>
           </div>
           <div class="p-4 md:w-1/3" data-aos="fade-up">
-            <div
-              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
-            >
+            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <div class="relative">
                 <img
                   class="lg:h-48 md:h-36 w-full object-cover object-center"
@@ -727,78 +487,34 @@
                 </div>
               </div>
               <div class="p-6">
-                <h2
-                  class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
-                >
-                  MACHINE LEARNING
-                </h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                  How Artificial Intelligence Works
-                </h1>
-                <p class="leading-relaxed mb-3">
-                  Cari tahu bagaimana kecerdasan buatan bekerja dan pengaruhnya
-                  terhadap kehidupan dunia nyata.
-                </p>
+                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MACHINE LEARNING</h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">How Artificial Intelligence Works</h1>
+                <p class="leading-relaxed mb-3">Mengenal, memahami dan mempelajari cara kerja dan bagaimana AI dibuat. Kalian juga bisa membuat AI setelah mengikuti bootcamp ini.</p>
                 <div class="flex items-center flex-wrap">
-                  <a
-                    class="text-primary inline-flex items-center md:mb-2 lg:mb-0 hover:px-3 duration-500 cursor-pointer"
+                  <a href="detail-bootcamp.html" class="text-[#2F3087] inline-flex items-center md:mb-2 lg:mb-0 hover:px-3 duration-500 cursor-pointer"
                     >Daftar Kursus
-                    <svg
-                      class="w-4 h-4 ml-2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M5 12h14"></path>
                       <path d="M12 5l7 7-7 7"></path>
                     </svg>
                   </a>
-                  <span
-                    class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"
-                  >
-                    <svg
-                      class="w-4 h-4 mr-1"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
-                      ></path>
-                      <circle cx="12" cy="12" r="3"></circle></svg
-                    >1.2K
+                  <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle></svg>
+                    1.2K
                   </span>
-                  <span
-                    class="text-gray-400 inline-flex items-center leading-none text-sm"
-                  >
-                    <svg
-                      class="w-4 h-4 mr-1"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
-                      ></path></svg
-                    >6
+                  <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path></svg>
+                    6
                   </span>
                 </div>
               </div>
             </div>
           </div>
           <div class="p-4 md:w-1/3" data-aos="fade-up-left">
-            <div
-              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
-            >
+            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <div class="relative">
                 <img
                   class="lg:h-48 md:h-36 w-full object-cover object-center"
@@ -810,69 +526,27 @@
                 </div>
               </div>
               <div class="p-6">
-                <h2
-                  class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
-                >
-                  BACK-END DEVELOPER
-                </h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                  Save Data With MySQL
-                </h1>
-                <p class="leading-relaxed mb-3">
-                  Efisien menyimpan dan mengelola data menggunakan MySQL, basis
-                  data yang andal dan cepat.
-                </p>
+                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">BACK-END DEVELOPER</h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Save Data With MySQL</h1>
+                <p class="leading-relaxed mb-3">Mempelajari database untuk pengaplikasian dalam pembuatan website dan aplikasi. Sekaligus mempelajari keamanan data.</p>
                 <div class="flex items-center flex-wrap">
-                  <a
-                    class="text-primary inline-flex items-center md:mb-2 lg:mb-0 hover:px-3 duration-500 cursor-pointer"
+                  <a href="detail-bootcamp.html" class="text-[#2F3087] inline-flex items-center md:mb-2 lg:mb-0 hover:px-3 duration-500 cursor-pointer"
                     >Daftar Kursus
-                    <svg
-                      class="w-4 h-4 ml-2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M5 12h14"></path>
                       <path d="M12 5l7 7-7 7"></path>
                     </svg>
                   </a>
-                  <span
-                    class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"
-                  >
-                    <svg
-                      class="w-4 h-4 mr-1"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
-                      ></path>
-                      <circle cx="12" cy="12" r="3"></circle></svg
-                    >1.2K
+                  <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle></svg>
+                    1.2K
                   </span>
-                  <span
-                    class="text-gray-400 inline-flex items-center leading-none text-sm"
-                  >
-                    <svg
-                      class="w-4 h-4 mr-1"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
-                      ></path></svg
-                    >6
+                  <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path></svg>
+                    6
                   </span>
                 </div>
               </div>
@@ -882,293 +556,123 @@
       </div>
     </section>
 
-    <!-- FREELANCE -->
-    <!-- FREELANCE -->
-    <!-- FREELANCE -->
-    <!-- FREELANCE -->
+    <!-- FREELANCE --> <!-- FREELANCE --> <!-- FREELANCE --> <!-- FREELANCE -->
 
-    <div
-      class="container mx-auto px-5 py-20 mt-52 text-center rounded-xl shadow background-linear-freelance"
-      data-aos="fade-up"
-    >
-      <h5 class="text-4xl px-5 font-bold text-white dark:text-white">
-        Tawarkan Jasa Anda Disini
-      </h5>
+    <div class="container mx-auto px-5 py-20 text-center rounded-xl shadow background-linear-freelance" data-aos="fade-up">
+      <h5 class="text-4xl px-5 font-bold text-white dark:text-white">Tawarkan Jasa Anda Disini</h5>
       <p class="mt-5 mb-8 text- text-white sm:text-lg">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat
-        fugit in quisquam quas at <br />
-        officiis cumque voluptates aspernatur fugiat.
+        Salah satu fitur terbaik kami yaitu memfasilitasi platform freelance, dimana pengguna <br> bisa menawarkan dan menggunakan jasa antar pengguna.
       </p>
-      <div
-        class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse"
-      >
-        <button
-          class="ml-4 inline-flex hover:text-gray-700 hover:bg-white border-0 py-2 px-6 focus:outline-none bg-orange-500 text-white hover:shadow-xl duration-500 rounded text-lg"
-        >
-          Tawarkan Jasa
-        </button>
-        <button
-          class="ml-4 inline-flex text-gray-700 bg-white border-0 py-2 px-6 focus:outline-none hover:bg-orange-500 hover:text-white hover:shadow-xl duration-500 rounded text-lg"
-        >
-          Cari Jasa
-        </button>
+      <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
+        <a href="jasa.html" class="ml-4 inline-flex hover:text-gray-700 hover:bg-white border-0 py-2 px-6 focus:outline-none bg-orange-500 text-white hover:shadow-xl duration-500 rounded text-lg">Tawarkan Jasa</a>
+        <a href="jasa.html" class="ml-4 inline-flex text-gray-700 bg-white border-0 py-2 px-6 focus:outline-none hover:bg-orange-500 hover:text-white hover:shadow-xl duration-500 rounded text-lg">Cari Jasa</a>
       </div>
     </div>
 
-    <!-- LOWONGAN KERJA -->
-    <!-- LOWONGAN KERJA -->
-    <!-- LOWONGAN KERJA -->
-    <!-- LOWONGAN KERJA -->
+    <!-- LOWONGAN KERJA --> <!-- LOWONGAN KERJA --> <!-- LOWONGAN KERJA --> <!-- LOWONGAN KERJA -->
 
     <section class="text-gray-600 body-font">
-      <div class="container px-5 pt-52 mb-24 mx-auto">
-        <div
-          class="flex flex-wrap w-full mb-20 flex-col items-center text-center"
-        >
-          <h1
-            class="sm:text-4xl text-3xl font-semibold title-font mb-2 text-gray-900"
-            data-aos="fade-up"
-          >
-            Cari Lowongan Kerja Anda
-          </h1>
-          <p
-            class="lg:w-1/2 w-full leading-relaxed text-gray-500"
-            data-aos="fade-up"
-          >
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
-            expedita odio quaerat consequuntur magni neque?
-          </p>
+      <div class="container px-5 py-52 mx-auto">
+        <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+          <h1 class="sm:text-4xl text-3xl font-semibold title-font mb-2 text-gray-900" data-aos="fade-up">Cari Lowongan Kerja Anda</h1>
+          <p class="lg:w-1/2 w-full leading-relaxed text-gray-500" data-aos="fade-up">Ayo bekerja!! Dan cari lowongan pekerjaan terbaik anda disini.</p>
         </div>
         <div class="flex flex-wrap -m-4">
           <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up-right">
-            <div
-              class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer"
-            >
-              <div
-                class="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4"
-              >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-6 h-6"
-                  viewBox="0 0 24 24"
-                >
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4dcPnKxXMwjxS3_KAMnw8kz2UhRerwlWMgA&s"
-                    alt=""
-                  />
+            <div class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer">
+              <div class="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4dcPnKxXMwjxS3_KAMnw8kz2UhRerwlWMgA&s" alt="" />
                 </svg>
               </div>
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
-                AWS Web Service
-              </h2>
-              <p class="leading-relaxed text-base">
-                Fingerstache flexitarian street art 8-bit waist co, subway tile
-                poke farm.
-              </p>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">AWS Web Service</h2>
+              <p class="leading-relaxed text-base">Luncurkan Proyek Anda di Platform Cloud Paling Komprehensif & Diadopsi Secara Luas.</p>
             </div>
           </div>
           <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up">
-            <div
-              class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer"
-            >
-              <div
-                class="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4"
-              >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-6 h-6"
-                  viewBox="0 0 24 24"
-                >
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFdBNzCwzZYZZLvd6eyst4__z3g4W2EKUaaQ&s"
-                    alt=""
-                  />
+            <div class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer">
+              <div class="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFdBNzCwzZYZZLvd6eyst4__z3g4W2EKUaaQ&s" alt="" />
                 </svg>
               </div>
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
-                Dicoding Academy
-              </h2>
-              <p class="leading-relaxed text-base">
-                Fingerstache flexitarian street art 8-bit waist co, subway tile
-                poke farm.
-              </p>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Dicoding Academy</h2>
+              <p class="leading-relaxed text-base">Kurikulum didesain dengan persetujuan dari Tim Google Android.</p>
             </div>
           </div>
           <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up-left">
-            <div
-              class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer"
-            >
-              <div
-                class="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4"
-              >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-6 h-6"
-                  viewBox="0 0 24 24"
-                >
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/480px-Google_%22G%22_logo.svg.png"
-                    alt=""
-                  />
+            <div class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer">
+              <div class="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/480px-Google_%22G%22_logo.svg.png" alt="" />
                   <circle cx="12" cy="7" r="4"></circle>
                 </svg>
               </div>
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
-                Google Developer
-              </h2>
-              <p class="leading-relaxed text-base">
-                Fingerstache flexitarian street art 8-bit waist co, subway tile
-                poke farm.
-              </p>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Google Developer</h2>
+              <p class="leading-relaxed text-base">Perusahaan multinasional Amerika Serikat yang berkekhususan pada jasa dan produk Internet.</p>
             </div>
           </div>
           <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up-right">
-            <div
-              class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer"
-            >
-              <div
-                class="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4"
-              >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-6 h-6"
-                  viewBox="0 0 24 24"
-                >
-                  <img
-                    src="https://cdn.pixabay.com/photo/2021/08/10/15/36/microsoft-6536268_1280.png"
-                    alt=""
-                  />
+            <div class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer">
+              <div class="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                  <img src="https://cdn.pixabay.com/photo/2021/08/10/15/36/microsoft-6536268_1280.png" alt="" />
                 </svg>
               </div>
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
-                Microsoft
-              </h2>
-              <p class="leading-relaxed text-base">
-                Fingerstache flexitarian street art 8-bit waist co, subway tile
-                poke farm.
-              </p>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Microsoft</h2>
+              <p class="leading-relaxed text-base">Perusahaan multinasional Amerika Serikat yang berpusat di Redmond, Washington.</p>
             </div>
           </div>
           <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up">
-            <div
-              class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer"
-            >
-              <div
-                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
-              >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-6 h-6"
-                  viewBox="0 0 24 24"
-                >
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcp1Ocx4huQYSWiy-wb4CU2BZPUeTeZSW9HQ&s"
-                    alt=""
-                  />
+            <div class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer">
+              <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcp1Ocx4huQYSWiy-wb4CU2BZPUeTeZSW9HQ&s" alt="" />
                 </svg>
               </div>
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
-                Tokopedia IT Solution
-              </h2>
-              <p class="leading-relaxed text-base">
-                Fingerstache flexitarian street art 8-bit waist co, subway tile
-                poke farm.
-              </p>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Tokopedia IT Solution</h2>
+              <p class="leading-relaxed text-base">Perusahaan teknologi Indonesia dengan misi pemerataan ekonomi secara digital</p>
             </div>
           </div>
           <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="fade-up-left">
-            <div
-              class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer"
-            >
-              <div
-                class="w-10 h-10 inline-flex items-center justify-center rounded-ful mb-4"
-              >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-6 h-6"
-                  viewBox="0 0 24 24"
-                >
-                  <img
-                    src="https://banner2.cleanpng.com/20180714/ycl/aav2d20ra.webp"
-                    alt=""
-                  />
+            <div class="border border-gray-200 p-6 rounded-lg hover:shadow-xl duration-500 cursor-pointer">
+              <div class="w-10 h-10 inline-flex items-center justify-center rounded-ful mb-4">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                  <img src="https://banner2.cleanpng.com/20180714/ycl/aav2d20ra.webp" alt="" />
                 </svg>
               </div>
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
-                Apple
-              </h2>
-              <p class="leading-relaxed text-base">
-                Fingerstache flexitarian street art 8-bit waist co, subway tile
-                poke farm.
-              </p>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Apple</h2>
+              <p class="leading-relaxed text-base">Apple Inc. adalah perusahaan teknologi multinasional yang berpusat di Cupertino.</p>
             </div>
           </div>
         </div>
-        <button
-          class="flex mx-auto text-white bg-primary border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg mt-10 sm:mt-14"
-        >
-          Lihat Lengkapnya
-        </button>
+        <button class="flex mx-auto text-white bg-[#2F3087] border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg mt-10 sm:mt-14">Lihat Lengkapnya</button>
       </div>
     </section>
 
-    <!-- FOOTER -->
-    <!-- FOOTER -->
-    <!-- FOOTER -->
-    <!-- FOOTER -->
+    <!-- FOOTER --> <!-- FOOTER --> <!-- FOOTER --> <!-- FOOTER -->
 
-    <footer class="bg-white rounded-lg mb-5">
-      <div
-        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
-      >
+    <footer class="bg-white rounded-lg mb-5 mt-40">
+      <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <span class="text-sm text-black sm:text-center"
-          >© 2024
-          <a href="https://flowbite.com/"
-            ><span class="blue font-bold">SemuaBisa</span
-            ><span class="text-orange-400 font-bold">.com</span></a
+          >© 2024 <a href="Index.html"><span class="blue font-bold">SemuaBisa</span><span class="text-orange-400 font-bold">.com</span></a
           >. All Rights Reserved.
         </span>
-        <ul
-          class="flex flex-wrap items-center mt-3 text-sm font-medium text-black sm:mt-0"
-        >
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-black sm:mt-0">
           <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Home</a>
+            <a href="Index.html" class="hover:underline me-4 md:me-6">Home</a>
           </li>
           <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Kuliah</a>
+            <a href="kuliah.html" class="hover:underline me-4 md:me-6">Kuliah</a>
           </li>
           <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Bootcamp</a>
+            <a href="bootcamp.html" class="hover:underline me-4 md:me-6">Bootcamp</a>
           </li>
           <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Jasa</a>
+            <a href="jasa.html" class="hover:underline me-4 md:me-6">Jasa</a>
           </li>
           <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Lowongan Kerja</a>
+            <a href="lowongan-kerja.html" class="hover:underline me-4 md:me-6">Lowongan Kerja</a>
           </li>
         </ul>
       </div>
@@ -1198,6 +702,40 @@
           }
         });
       });
+
+      window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 0) {
+        navbar.classList.add('border-b-2', 'shadow-md');
+    } else {
+        navbar.classList.remove('border-b-2', 'shadow-md');
+    }
+});
+
+let intro = document.querySelector('.intro')
+    let logo = document.querySelector('.logo-header')
+    let logoSpan = document.querySelectorAll('.logo')
+    window.addEventListener('DOMContentLoaded',()=>{
+      setTimeout(()=>{
+        logoSpan.forEach((span,idx) => {
+          setTimeout(()=>{
+            span.classList.add('active')
+        }, (idx+1)*400);
+      });
+
+      setTimeout(()=>{
+        logoSpan.forEach((span,idx)=>{
+          setTimeout(()=>{
+            span.classList.remove('active');
+            span.classList.add('fade');
+          }, (idx+1)*50)
+        })
+      },2000);
+      setTimeout(() => {
+        intro.style.top= '-100vh'
+      },2300);
+    })
+  })
     </script>
 
     <script src="main.js"></script>
