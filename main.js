@@ -5,12 +5,13 @@ document.getElementById('close-btn').addEventListener('click', function() {
 
 // -------
 
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('nav');
+window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('navbar');
     if (window.scrollY > 0) {
-        navbar.classList.add('shadow-md', 'border-b'); // Menambahkan bayangan dan border saat di-scroll
+        navbar.classList.add('border-b-2', 'border-[#2F3087]', 'shadow-md'); // Add bottom border
     } else {
-        navbar.classList.remove('shadow-md', 'border-b'); // Menghapus bayangan dan border saat di atas
+        navbar.classList.remove('border-b-2', 'border-[#2F3087]', 'shadow-md'); // Remove bottom border
     }
 });
+
 
