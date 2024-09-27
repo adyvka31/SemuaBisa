@@ -162,7 +162,7 @@
 
 .logo-header{
 	position: absolute;
-	top: 45%;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: #D9DCD6;
@@ -185,10 +185,4 @@
 	bottom: 0;
 	opacity: 0;
 	transition: ease-in-out 0.5s;
-}
-
-@media (max-width: 1016px) {
-  .hidden-at-480 {
-    display: none;
-  }
 }

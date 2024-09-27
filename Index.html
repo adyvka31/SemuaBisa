@@ -68,115 +68,53 @@
       <!-- NAVBAR -->
       <!-- NAVBAR -->
 
-      <nav
-        id="navbar"
-        class="fixed w-full bg-white top-0 left-0 z-50 transition-all duration-300"
-      >
-        <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto p-4"
-        >
-          <a
-            href="https://flowbite.com/"
-            class="flex items-center space-x-3 rtl:space-x-reverse"
-          >
-            <span
-              class="self-center text-2xl font-semibold whitespace-nowrap text-black"
-              ><span class="blue font-bold">Semua</span
-              ><span class="text-orange-400 font-bold">Bisa</span></span
-            >
-          </a>
-          <div
-            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
-          >
-            <a
-              href="./auth/register.html"
-              class="items-center bg-[#2F3087] border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl text-white duration-500 rounded-full text-base mt-2 md:mt-0 hidden md:inline-flex"
-            >
-              Daftar
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-4 h-4 ml-1"
-                viewBox="0 0 24 24"
-              >
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
+      <nav id="navbar" class="fixed w-full bg-white top-0 left-0 z-50 transition-all duration-300 ">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-black">
+                    <span class="blue font-bold">SemuaBisa</span>
+                    <span class="text-orange-400 font-bold">.com</span>
+                </span>
             </a>
-
-            <button
-              data-collapse-toggle="navbar-sticky"
-              type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-sticky"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
-          </div>
-          <div
-            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-            id="navbar-sticky"
-          >
-            <ul
-              class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
-            >
-              <li>
-                <a
-                  href="Index.html"
-                  class="garis relative block font-bold py-2 px-3 text-black rounded md:bg-transparent md:text-[#2F3087] md:p-0"
-                  >Home</a
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <a href="auth/register.html" class="inline-flex items-center bg-[#2F3087] border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl text-white duration-500 rounded-full text-base mt-4 md:mt-0">
+                    Daftar
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+                <button
+                  data-collapse-toggle="navbar-sticky"
+                  type="button"
+                  class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                  aria-controls="navbar-sticky"
+                  aria-expanded="false"
                 >
-              </li>
-              <li>
-                <a
-                  href="kuliah.html"
-                  class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#2F3087] md:p-0 md:dark:hover:text-[#2F3087] dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
-                  aria-current="page"
-                  >Kuliah</a
-                >
-              </li>
-              <li>
-                <a
-                  href="bootcamp.html"
-                  class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#2F3087] md:p-0 md:dark:hover:text-[#2F3087] dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  Bootcamp</a
-                >
-              </li>
-              <li>
-                <a
-                  href="jasa.html"
-                  class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#2F3087] md:p-0 md:dark:hover:text-[#2F3087] dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Jasa</a
-                >
-              </li>
-              <li>
-                <a
-                  href="lowongan-kerja.html"
-                  class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#2F3087] md:p-0 md:dark:hover:text-[#2F3087] dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Lowongan Kerja</a
-                >
-              </li>
-            </ul>
-          </div>
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                    <li>
+                        <a href="Index.html" class="garis relative block font-bold py-2 px-3 text-black rounded md:bg-transparent md:text-[#2F3087] md:p-0" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="kuliah.html" class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#2F3087] md:p-0">Kuliah</a>
+                    </li>
+                    <li>
+                        <a href="bootcamp.html" class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#2F3087] md:p-0">Bootcamp</a>
+                    </li>
+                    <li>
+                        <a href="jasa.html" class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#2F3087] md:p-0">Jasa</a>
+                    </li>
+                    <li>
+                        <a href="lowongan-kerja.html" class="garis relative block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#2F3087] md:p-0">Lowongan Kerja</a>
+                    </li>
+                </ul>
+            </div>
         </div>
       </nav>
 
@@ -186,49 +124,21 @@
       <!-- HERO -->
 
       <section class="text-gray-600 body-font">
-        <div
-          class="container mx-auto flex px-5 py-40 items-center justify-center flex-col relative"
-          data-aos="fade-up"
-        >
-          <img
-            class="absolute w-32 right-32 bottom-0 hidden md:block"
-            src="Images/ellipes.png"
-            alt=""
-          />
-          <img
-            class="absolute w-32 left-20 bottom-80 hidden md:block"
-            src="Images/ellipes.png"
-            alt=""
-          />
+        <div class="container mx-auto flex px-5 py-40 items-center justify-center flex-col" data-aos="fade-up">
+          <img class="absolute w-32 right-32 bottom-0" src="Images/ellipes.png" alt="" />
+          <img class="absolute w-32 left-20 bottom-80" src="Images/ellipes.png" alt="" />
           <div class="text-center lg:w-2/3 w-full mt-36">
-            <h1
-              class="title-font sm:text-5xl text-4xl mb-3 font-bold text-gray-900"
-            >
-              Kembangkan Skill Di <span class="blue font-bold">Semua</span
-              ><span class="text-orange-400 font-bold">Bisa</span>
-            </h1>
-            <p class="mb-10 text-base leading-relaxed">
-              - Menanam Bakat Pemuda Indonesia -
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center">
-              <a
-                href="#tentangkami"
-                class="inline-flex text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg mb-4 sm:mb-0 sm:mr-4"
-                >Lebih Lengkap</a
-              >
-              <a
-                href="#tentangkami"
-                class="inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-primary hover:text-white hover:shadow-xl duration-500 rounded text-lg"
-                >Tentang</a
-              >
+            <h1 class="title-font sm:text-5xl text-4xl mb- font-bold mb-3 text-gray-900">Kembangkan Skill Di <span class="blue font-bold">SemuaBisa</span><span class="text-orange-400 font-bold">.com</span></h1>
+            <p class="mb-10 text-base leading-relaxed">- Menanam Bakat Pemuda Indonesia -</p>
+            <div class="flex justify-center">
+              <a href="#tentangkami" class="inline-flex text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg">Lebih Lengkap</a href="#tentangkami">
+              <a href="#tentangkami" class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-primary hover:text-white hover:shadow-xl duration-500 rounded text-lg">Tentang</a href="#tentangkami">
             </div>
           </div>
         </div>
       </section>
 
-      <section
-        class="text-gray-600 body-font absolute w-full bottom-[-7rem] hidden-at-480"
-      >
+      <section class="text-gray-600 body-font absolute w-full bottom-[-7rem]">
         <div class="container py-14 mx-auto bg-white shadow-2xl rounded-lg">
           <div
             class="lg:w-3/4 flex flex-col sm:flex-row sm:items-center items-start mx-auto"
@@ -1176,39 +1086,26 @@
     <!-- FOOTER -->
 
     <footer class="bg-white rounded-lg mb-5 mt-40">
-      <div
-        class="w-full mx-auto max-w-screen-xl p-4 flex flex-col items-center md:flex-row md:items-center md:justify-between"
-      >
-        <span class="text-sm text-black sm:text-center">
-          © 2024
-          <a href="Index.html"
-            ><span class="blue font-bold">Semua</span
-            ><span class="text-orange-400 font-bold">Bisa</span></a
+      <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-black sm:text-center"
+          >© 2024 <a href="Index.html"><span class="blue font-bold">SemuaBisa</span><span class="text-orange-400 font-bold">.com</span></a
           >. All Rights Reserved.
         </span>
-        <ul
-          class="flex flex-wrap items-center mt-3 text-sm font-medium text-black sm:mt-0 md:justify-center"
-        >
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-black sm:mt-0">
           <li>
             <a href="Index.html" class="hover:underline me-4 md:me-6">Home</a>
           </li>
           <li>
-            <a href="kuliah.html" class="hover:underline me-4 md:me-6"
-              >Kuliah</a
-            >
+            <a href="kuliah.html" class="hover:underline me-4 md:me-6">Kuliah</a>
           </li>
           <li>
-            <a href="bootcamp.html" class="hover:underline me-4 md:me-6"
-              >Bootcamp</a
-            >
+            <a href="bootcamp.html" class="hover:underline me-4 md:me-6">Bootcamp</a>
           </li>
           <li>
             <a href="jasa.html" class="hover:underline me-4 md:me-6">Jasa</a>
           </li>
           <li>
-            <a href="lowongan-kerja.html" class="hover:underline me-4 md:me-6"
-              >Lowongan Kerja</a
-            >
+            <a href="lowongan-kerja.html" class="hover:underline me-4 md:me-6">Lowongan Kerja</a>
           </li>
         </ul>
       </div>
@@ -1275,6 +1172,5 @@
     </script>
 
     <script src="main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
   </body>
 </html>
