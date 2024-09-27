@@ -12,6 +12,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
 
+    </style>
+
     <script>
       tailwind.config = {
         theme: {
@@ -73,12 +75,13 @@
                 </span>
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                <a href="auth/register.html" class="inline-flex items-center bg-[#2F3087] border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl text-white duration-500 rounded-full text-base mt-4 md:mt-0">
-                    Daftar
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                </a>
+              <a href="auth/register.html" class="inline-flex items-center bg-[#2F3087] border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl text-white duration-500 rounded-full text-base mt-2 md:mt-0 transform hover:translate-y-[-2px]">
+                Daftar
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </a>
+            
                 <button
                   data-collapse-toggle="navbar-sticky"
                   type="button"
@@ -134,17 +137,6 @@
         </div>
       </section>
       
-      <section class="text-gray-600 body-font absolute w-full bottom-[-7rem]">
-        <div class="container py-14 mx-auto bg-white shadow-2xl rounded-lg">
-          <div class="lg:w-3/4 flex flex-col sm:flex-row sm:items-center items-start mx-auto" data-aos="fade-up">
-            <h1 class="flex-grow text-xl sm:text-2xl font-medium title-font text-gray-900 text-center sm:text-left">
-              Di <span class="blue font-bold">SemuaBisa</span><span class="text-orange-400 font-bold">.com</span> Berbagai Kursus dan Bootcamp Terbaik 100% GRATIS
-            </h1>
-            <img src="Images/panah.png" alt="" class="w-32 sm:w-44 h-20 ml-5 mr-0 sm:mr-20 mt-4 sm:mt-0" />
-            <a href="auth/register.html" class="flex-shrink-0 text-white bg-[#2F3087] border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl duration-500 rounded text-lg mt-4 sm:mt-0">Daftar Sekarang!!</a>
-          </div>
-        </div>
-      </section>
 
       <section class="text-gray-600 body-font absolute w-full bottom-[-7rem] hidden-at-480">
         <div class="container py-14 mx-auto bg-white shadow-2xl rounded-lg">
@@ -667,31 +659,30 @@
     <!-- FOOTER --> <!-- FOOTER --> <!-- FOOTER --> <!-- FOOTER -->
 
     <footer class="bg-white rounded-lg mb-5 mt-40">
-      <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-        <span class="text-sm text-black sm:text-center"
-          >© 2024 <a href="Index.html"><span class="blue font-bold">SemuaBisa</span><span class="text-orange-400 font-bold">.com</span></a
-          >. All Rights Reserved.
-        </span>
-        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-black sm:mt-0">
-          <li>
-            <a href="Index.html" class="hover:underline me-4 md:me-6">Home</a>
-          </li>
-          <li>
-            <a href="kuliah.html" class="hover:underline me-4 md:me-6">Kuliah</a>
-          </li>
-          <li>
-            <a href="bootcamp.html" class="hover:underline me-4 md:me-6">Bootcamp</a>
-          </li>
-          <li>
-            <a href="jasa.html" class="hover:underline me-4 md:me-6">Jasa</a>
-          </li>
-          <li>
-            <a href="lowongan-kerja.html" class="hover:underline me-4 md:me-6">Lowongan Kerja</a>
-          </li>
-        </ul>
+      <div class="w-full mx-auto max-w-screen-xl p-4 flex flex-col items-center md:flex-row md:items-center md:justify-between">
+          <span class="text-sm text-black sm:text-center">
+              © 2024 <a href="Index.html"><span class="blue font-bold">SemuaBisa</span><span class="text-orange-400 font-bold">.com</span></a>. All Rights Reserved.
+          </span>
+          <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-black sm:mt-0 md:justify-center">
+              <li>
+                  <a href="Index.html" class="hover:underline me-4 md:me-6">Home</a>
+              </li>
+              <li>
+                  <a href="kuliah.html" class="hover:underline me-4 md:me-6">Kuliah</a>
+              </li>
+              <li>
+                  <a href="bootcamp.html" class="hover:underline me-4 md:me-6">Bootcamp</a>
+              </li>
+              <li>
+                  <a href="jasa.html" class="hover:underline me-4 md:me-6">Jasa</a>
+              </li>
+              <li>
+                  <a href="lowongan-kerja.html" class="hover:underline me-4 md:me-6">Lowongan Kerja</a>
+              </li>
+          </ul>
       </div>
-    </footer>
-
+  </footer>
+  
     <script>
       AOS.init();
     </script>
