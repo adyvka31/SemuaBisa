@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style/style.css" />
   <link rel="icon" href="Images/logo.png" type="image/png" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
   <link
     href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
     rel="stylesheet"
@@ -140,7 +139,7 @@
               <h1 class="text-blue-900 font-bold text-center text-5xl">Daftar Kuliah SemuaBisa</h1>
               <p class="text-gray-500 font-light text-lg mt-2">- SemuaBisa.com -</p>
               <button
-                  class="inline-flex items-center bg-[#2F3087] border-0 py-2 px-8 focus:outline-none hover:bg-[#E40A1A] hover:shadow-xl text-white duration-500 rounded-full text-base mt-6">
+                  class="inline-flex items-center bg-[#2F3087] border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl text-white duration-500 rounded-full text-base mt-6">
                   Back Home
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                       class="w-4 h-4 ml-1" viewBox="0 0 24 24">
@@ -361,9 +360,9 @@
 </div>
 </div>
 
-<div class="flex justify-center items-center mt-10" >
+<div class="flex justify-center items-center mt-10">
   <button
-  data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="flex items-center justify-center w-60 px-5 py-1 tracking-wide text-white capitalize font-bold transition-colors duration-300 text-lg transform bg-[#2F3087] rounded-lg hover:bg-[#2F3087]0">
+      class="flex items-center justify-center w-60 px-5 py-1 tracking-wide text-white capitalize font-bold transition-colors duration-300 text-lg transform bg-[#2F3087] rounded-lg hover:bg-[#2F3087]0">
       <span>Simpan Data Diri</span>
       <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 rtl:-scale-x-100 ml-2" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd"
@@ -371,55 +370,35 @@
               clip-rule="evenodd" />
       </svg>
   </button>
-
-  <div id="popup-modal" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-    <div class="relative p-4 w-full max-w-md max-h-full">
-        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-            
-            <div class="p-4 md:p-5 text-center">
-                <svg class="mx-auto mb-4 text-gray-400 w-12 h-12 dark:text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
-                </svg>
-                <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Akun Anda Sudah Terdaftar</h3>
-                <button data-modal-hide="popup-modal" type="button" class="text-white bg-[#2F3087] hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center">
-                    <a href="Index.html">Back Home</a>
-                </button>
-                <button data-modal-hide="popup-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Stay Here</button>
-            </div>
-        </div>
-    </div>
-</div>
 </div>
 
 </section>
 
 <footer class="bg-white rounded-lg mb-5 mt-40">
-  <div class="w-full mx-auto max-w-screen-xl p-4 flex flex-col items-center md:flex-row md:items-center md:justify-between">
-      <span class="text-sm text-black sm:text-center">
-          © 2024 <a href="Index.html"><span class="blue font-bold">SemuaBisa</span><span class="text-orange-400 font-bold">.com</span></a>. All Rights Reserved.
-      </span>
-      <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-black sm:mt-0 md:justify-center">
-          <li>
-              <a href="Index.html" class="hover:underline me-4 md:me-6">Home</a>
-          </li>
-          <li>
-              <a href="kuliah.html" class="hover:underline me-4 md:me-6">Kuliah</a>
-          </li>
-          <li>
-              <a href="bootcamp.html" class="hover:underline me-4 md:me-6">Bootcamp</a>
-          </li>
-          <li>
-              <a href="jasa.html" class="hover:underline me-4 md:me-6">Jasa</a>
-          </li>
-          <li>
-              <a href="lowongan-kerja.html" class="hover:underline me-4 md:me-6">Lowongan Kerja</a>
-          </li>
-      </ul>
+  <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+    <span class="text-sm text-black sm:text-center"
+      >© 2024 <a href="https://flowbite.com/"><span class="blue font-bold">SemuaBisa</span><span class="text-orange-400 font-bold">.com</span></a
+      >. All Rights Reserved.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-black sm:mt-0">
+      <li>
+        <a href="#" class="hover:underline me-4 md:me-6">Home</a>
+      </li>
+      <li>
+        <a href="#" class="hover:underline me-4 md:me-6">Kuliah</a>
+      </li>
+      <li>
+        <a href="#" class="hover:underline me-4 md:me-6">Bootcamp</a>
+      </li>
+      <li>
+        <a href="#" class="hover:underline me-4 md:me-6">Jasa</a>
+      </li>
+      <li>
+        <a href="#" class="hover:underline me-4 md:me-6">Lowongan Kerja</a>
+      </li>
+    </ul>
   </div>
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
-    
 
 </body>
 </html>
