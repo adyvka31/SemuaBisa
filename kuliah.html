@@ -17,7 +17,7 @@
     ></script>
   </head>
   <body>
-    <nav class="fixed w-full bg-white top-0 start-0 border-b z-50">
+    <nav id="navbar" class="fixed w-full bg-white top-0 left-0 z-50 transition-all duration-300">
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
@@ -33,7 +33,7 @@
         </a>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
-            class="inline-flex items-center bg-[#2F3087] border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl text-white duration-500 rounded-full text-base mt-4 md:mt-0"
+            class="inline-flex items-center bg-[#2F3087] border-0 py-2 px-8 focus:outline-none hover:bg-orange-400 hover:shadow-xl text-white duration-500 rounded-full text-base mt-2 md:mt-0"
           >
             Daftar
             <svg
@@ -842,6 +842,38 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script src="main.js"></script>
+
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
+        const openModalButton = document.getElementById("open-modal");
+        const closeModalButton = document.getElementById("close-modal");
+        const modal = document.getElementById("select-modal");
+
+        openModalButton.addEventListener("click", function () {
+          modal.classList.remove("hidden");
+        });
+
+        closeModalButton.addEventListener("click", function () {
+          modal.classList.add("hidden");
+        });
+
+        window.addEventListener("click", function (event) {
+          if (event.target === modal) {
+            modal.classList.add("hidden");
+          }
+        });
+      });
+
+      window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 0) {
+        navbar.classList.add('border-b-2', 'shadow-md');
+    } else {
+        navbar.classList.remove('border-b-2', 'shadow-md');
+    }
+});
+    </script>
 
     <script>
       AOS.init();
