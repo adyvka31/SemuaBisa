@@ -186,3 +186,9 @@
 	opacity: 0;
 	transition: ease-in-out 0.5s;
 }
+
+@media (max-width: 1016px) {
+  .hidden-at-480 {
+    display: none;
+  }
+}
